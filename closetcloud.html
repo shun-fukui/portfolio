@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOSETCLOUD - SHUN FUKUI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rift-white': '#FFFFFF',
+                        'rift-black': '#111111',
+                        'rift-blue': '#8F0202',
+                        'rift-grey': '#E5E5E5',
+                        'rift-beige': '#FFF5EA',
+                    },
+                    fontFamily: {
+                        'sans': ['Archivo Black', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                    cursor: {
+                        'none': 'none',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body
+    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"
+        class="fixed top-0 left-0 w-3 h-3 bg-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
+    </div>
+    <div id="cursor-ring"
+        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="relative z-10 flex flex-col md:flex-row flex-grow min-h-screen">
+
+        <!-- Side Panel (Persistent Header) -->
+        <aside
+            class="md:w-1/4 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
+            <div>
+                <a href="index.html" class="block group">
+                    <h1 class="font-sans text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
+                        data-hover-text="BACK">SHUN<br>FUKUI</h1>
+                </a>
+                <p class="font-mono text-rift-blue text-xs tracking-widest">CREATIVE // DESIGNER</p>
+            </div>
+
+            <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
+                <nav class="flex flex-col gap-2 mb-8 text-lg font-sans font-bold">
+                    <a href="index.html" class="hover:text-rift-blue hover-trigger">WORKS</a>
+                    <a href="#" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                    <a href="#" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                    <a href="#" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                </nav>
+                <p>BASED IN JAPAN & AUSTRALIA</p>
+                <p>2026</p>
+                <div class="pt-4">
+                    <a href="index.html" class="text-3xl text-rift-blue hover:text-rift-black hover-trigger"><i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Scrollable Area -->
+        <main class="md:w-3/4 md:ml-auto flex flex-col min-h-screen">
+
+            <!-- Header -->
+            <div
+                class="bg-rift-white text-rift-blue py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
+                <h2 class="font-sans text-xl tracking-widest">UX PROJECT</h2>
+                <span class="font-mono text-xs">UX DESIGN</span>
+            </div>
+
+            <!-- Content -->
+            <section class="bg-rift-beige flex-grow p-4 md:p-12 animate-fade-in font-['Arial'] text-rift-black">
+
+                <!-- Hero Section (Full Width, No Border) -->
+                <div class="h-[85vh] w-full mb-24 overflow-hidden">
+                    <img src="closetcloud box.png" alt="ClosetCloud Box" class="w-full h-full object-cover">
+                </div>
+
+                <div class="space-y-24">
+                    <!-- 1. Key Features -->
+                    <section class="pl-6 md:pl-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">01 // FEATURE</h2>
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Key Features</h3>
+                        </div>
+
+                        <div class="space-y-12 max-w-4xl">
+                            <div>
+                                <h4 class="font-bold mb-2 text-xl">Main Feature</h4>
+                                <p class="text-md leading-relaxed">
+                                    ClosetCloud aims to promote clothing sustainability by offering people the option to
+                                    rent clothes for a much cheaper price.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="font-bold mb-6">Features</h4>
+                                <!-- 2x2 Grid -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                                    <!-- Feature 1 -->
+                                    <div class="space-y-3">
+                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
+                                        <span class="block font-bold">Condition Report</span>
+                                        <p class="text-sm leading-relaxed">Lenders must complete a condition report when
+                                            lending out an item of clothing, describing the item’s quality. Upon
+                                            receiving the item, the renter cross-checks with the condition report.</p>
+                                    </div>
+
+                                    <!-- Feature 2 -->
+                                    <div class="space-y-3">
+                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
+                                        <span class="block font-bold">Sizing Compatibility</span>
+                                        <p class="text-sm leading-relaxed">Users can save their body measurements on
+                                            their profile, allowing them to use the sizing compatibility feature on
+                                            different products.</p>
+                                    </div>
+
+                                    <!-- Feature 3 -->
+                                    <div class="space-y-3">
+                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
+                                        <span class="block font-bold">QR Code</span>
+                                        <p class="text-sm leading-relaxed">Renters receive a unique QR code which can be
+                                            scanned by the lender when receiving the item. This ensures smooth
+                                            verification of identity.</p>
+                                    </div>
+
+                                    <!-- Feature 4 -->
+                                    <div class="space-y-3">
+                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
+                                        <span class="block font-bold">Bargain to buy</span>
+                                        <p class="text-sm leading-relaxed">Users have the option to bargain to buy a
+                                            clothing item. This allows users to save money from repeatedly renting and
+                                            further strengthen sustainability.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. What can ClosetCloud Solve? -->
+                    <section class="pl-6 md:pl-12">
+                        <div class="border-l-4 border-rift-black pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">02 // PROBLEM & SOLUTION
+                            </h2>
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">What can<br>ClosetCloud
+                                Solve?</h3>
+                        </div>
+
+                        <div class="space-y-8 max-w-2xl">
+                            <div>
+                                <h4 class="font-bold mb-2">Problem</h4>
+                                <p class="text-sm leading-relaxed mb-4">ClosetCloud addresses the problem of
+                                    overconsumption in the fashion industry, as it causes significant harm to the
+                                    environment.</p>
+
+                                <div class="pl-4 border-l-2 border-rift-grey space-y-4">
+                                    <div>
+                                        <span class="block font-bold text-xs uppercase text-rift-blue">Waste</span>
+                                        <p class="text-sm leading-relaxed">92 million tonnes of textile waste is
+                                            generated per year worldwide with around 85% of textiles ending up in
+                                            landfills or are burnt.</p>
+                                    </div>
+                                    <div>
+                                        <span class="block font-bold text-xs uppercase text-rift-blue">Fast Fashion
+                                            Culture</span>
+                                        <p class="text-sm leading-relaxed">Trendy clothes and styles are produced
+                                            quickly in a large volume and sold at a cheap price. This encourages
+                                            consumers to purchase frequently and dispose of items after only a few
+                                            wears. This creates a cycle of buying and under-using, causing significant
+                                            sustainable and social issues.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-bold mb-2">Our Solution</h4>
+                                <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that connects
+                                    people who want to rent, lend, or share affordable outfits directly from one
+                                    another’s closets.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. User Flow -->
+                    <section class="pl-6 md:pl-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">03 // FLOW</h2>
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">User Flow</h3>
+                        </div>
+
+                        <!-- Diagram Placeholder -->
+                        <div class="w-full bg-rift-white flex items-center justify-center overflow-hidden">
+                            <img src="User%20Journey.png" alt="User Journey Map" class="w-full h-auto object-cover">
+                        </div>
+                    </section>
+
+                    <!-- 4. Ideation Process -->
+                    <section class="pl-6 md:pl-12">
+                        <div class="border-l-4 border-rift-black pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">04 // IDEATION</h2>
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Ideation Process</h3>
+                        </div>
+                        <ul class="list-disc pl-5 space-y-2 text-sm max-w-2xl">
+                            <li>Identifying Stakeholders</li>
+                            <li>Identifying Themes from Early Stakeholder Interviews</li>
+                        </ul>
+                    </section>
+
+                    <!-- 5. User-Based Evaluations -->
+                    <section class="pl-6 md:pl-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">05 // RESEARCH</h2>
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">User-Based Evaluations
+                            </h3>
+                        </div>
+
+                        <div class="space-y-8 max-w-2xl">
+                            <div>
+                                <h4 class="font-bold mb-2">Task Scenarios</h4>
+                                <p class="text-sm leading-relaxed mb-2">Participants went through a guided interactive
+                                    sequence through our Figma prototype.</p>
+                                <div class="pl-4 border-l-2 border-rift-grey">
+                                    <span class="block font-bold text-xs uppercase text-rift-blue">Findings</span>
+                                    <ul class="list-disc pl-5 mt-2 text-sm space-y-1">
+                                        <li>Participants couldn’t find the ‘order page’ → Move to profile page from
+                                            settings</li>
+                                        <li>Novelty: “Many platforms provide this feature already”</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-bold mb-2">First Click Test & 5-Second Test</h4>
+                                <ul class="list-disc pl-5 text-sm space-y-1">
+                                    <li>Highlighted navigational ambiguity</li>
+                                    <li>Issues with visual hierarchy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 6. Design Process -->
+                    <section class="pl-6 md:pl-12">
+                        <div class="border-l-4 border-rift-black pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">06 // DESIGN</h2>
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Design Process</h3>
+                        </div>
+                        <ul class="list-disc pl-5 space-y-2 text-sm max-w-2xl">
+                            <li>Initial Ideations</li>
+                            <li>Wireframes</li>
+                        </ul>
+                    </section>
+
+                    <!-- 7. Video (New) -->
+                    <section class="pl-6 md:pl-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">07 // PREVIEW</h2>
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Video of ClosetCloud
+                            </h3>
+                        </div>
+                        <div class="w-full aspect-video bg-black flex items-center justify-center">
+                            <span class="text-white font-mono text-xs">[VIDEO PLACEHOLDER]</span>
+                        </div>
+                    </section>
+
+                    <!-- 8. Final Section (New) -->
+                    <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-12">
+                        <!-- Left: Screenshot -->
+                        <div class="order-2 md:order-1">
+                            <img src="closetcloud_visual.png" alt="ClosetCloud Screens"
+                                class="w-full shadow-2xl border-2 border-rift-black">
+                        </div>
+                        <!-- Right: Quote -->
+                        <div class="order-1 md:order-2">
+                            <h3 class="font-['Times_New_Roman'] text-xl md:text-2xl leading-tight">
+                                “We hope these features make renting with ClosetCloud feel safer, more enjoyable, and
+                                boost confidence, and overall, encourage more sustainable habits in the clothing world.”
+                            </h3>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-rift-white text-rift-black py-20 px-4 text-center border-t border-rift-black mt-auto">
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <h2 class="font-mono text-sm tracking-widest text-rift-blue">NEXT PROJECT?</h2>
+                    <a href="index.html"
+                        class="font-sans text-4xl md:text-6xl hover:text-rift-blue transition-colors hover-trigger">VIEW
+                        ALL WORK</a>
+                    <p class="font-mono text-xs text-rift-black mt-12">© 2026 SHUN FUKUI.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelector('section').style.opacity = '0';
+        setTimeout(() => {
+            document.querySelector('section').style.transition = 'opacity 1s';
+            document.querySelector('section').style.opacity = '1';
+        }, 100);
+    </script>
+</body>
+
+</html>

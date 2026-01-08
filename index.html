@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUN FUKUI - PORTFOLIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rift-white': '#FFFFFF',
+                        'rift-black': '#111111',
+                        'rift-blue': '#002080',
+                        'rift-grey': '#E5E5E5',
+                    },
+                    fontFamily: {
+                        'sans': ['Archivo Black', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                    cursor: {
+                        'none': 'none',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body
+    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"
+        class="fixed top-0 left-0 w-3 h-3 bg-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
+    </div>
+    <div id="cursor-ring"
+        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
+    </div>
+
+    <!-- Intro Loader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-rift-white flex flex-col justify-center items-center text-center">
+        <div>
+            <h2 class="font-mono text-rift-blue text-sm md:text-xl tracking-widest mb-4">CREATIVE // DESIGNER</h2>
+            <h1 class="font-sans text-[12vw] leading-[0.85] tracking-tighter text-rift-black">
+                SHUN<br>FUKUI
+            </h1>
+        </div>
+        <div class="absolute bottom-8 animate-bounce">
+            <p class="font-mono text-xs text-rift-blue">LOADING...</p>
+        </div>
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="relative z-10 flex flex-col md:flex-row flex-grow min-h-screen">
+
+        <!-- Side Panel (Persistent Header) -->
+        <aside
+            class="md:w-1/4 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
+            <div>
+                <h1 class="font-sans text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
+                    data-hover-text="SHUN">SHUN<br>FUKUI</h1>
+                <p class="font-mono text-rift-blue text-xs tracking-widest">CREATIVE // DESIGNER</p>
+            </div>
+
+            <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
+                <nav class="flex flex-col gap-2 mb-8 text-lg font-sans font-bold">
+                    <a href="index.html" class="hover:text-rift-blue hover-trigger">WORKS</a>
+                    <a href="#" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                    <a href="#" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                    <a href="#" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                </nav>
+                <p>BASED IN JAPAN & AUSTRALIA</p>
+                <p>2026</p>
+                <div class="pt-4 flex gap-4 text-xl">
+                    <a href="#" class="hover:text-rift-blue transition-colors hover-trigger"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-rift-blue transition-colors hover-trigger"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-rift-blue transition-colors hover-trigger"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Scrollable Area -->
+        <main class="md:w-3/4 md:ml-auto flex flex-col">
+
+
+
+            <!-- The Projects Grid -->
+            <!-- Using grid-cols-12 or flex for more "random" feel -->
+            <section class="flex-grow p-4 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-16">
+
+                    <div class="col-span-1 md:col-span-2 lg:col-span-8 group hover-trigger">
+                        <a href="closetcloud.html" class="block overflow-hidden">
+                            <div
+                                class="aspect-[16/9] bg-[url('closetcloud%20box.png')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </a>
+                        <div class="mt-3 flex justify-between items-start">
+                            <h3 class="font-sans text-2xl uppercase">ClosetCloud</h3>
+                            <p class="font-mono text-xs text-rift-blue mt-1">UX Design • '25</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 (Tall/Narrow) -->
+                    <div class="col-span-1 md:col-span-1 lg:col-span-4 group hover-trigger mt-12 md:mt-24 lg:mt-0">
+                        <a href="#" class="block overflow-hidden">
+                            <div
+                                class="aspect-[3/4] bg-[url('https://placehold.co/600x800/FFFFFF/002080?text=ECHO+APP+UI')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </a>
+                        <div class="mt-3 flex justify-between items-start">
+                            <h3 class="font-sans text-2xl uppercase">Echo App</h3>
+                            <p class="font-mono text-xs text-rift-blue mt-1">UX/UI • '25</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 (Mid box) -->
+                    <div class="col-span-1 md:col-span-1 lg:col-span-5 group hover-trigger">
+                        <a href="#" class="block overflow-hidden">
+                            <div
+                                class="aspect-[4/3] bg-[url('https://placehold.co/800x600/FFFFFF/002080?text=TOKYO+NIGHTS')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </a>
+                        <div class="mt-3 flex justify-between items-start">
+                            <h3 class="font-sans text-2xl uppercase">Tokyo Nights</h3>
+                            <p class="font-mono text-xs text-rift-blue mt-1">PHOTO • '24</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 (Reverie Moved Here) -->
+                    <div class="col-span-1 md:col-span-1 lg:col-span-7 group hover-trigger pt-0 md:pt-16">
+                        <a href="reverie.html" class="block overflow-hidden">
+                            <div
+                                class="aspect-[16/9] bg-[url('reverie%20box.png')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </a>
+                        <div class="mt-3 flex justify-between items-start">
+                            <h3 class="font-sans text-2xl uppercase">Reverie</h3>
+                            <p class="font-mono text-xs text-rift-blue mt-1">UX/UI Hackathon • '25</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 (Full Width specific) -->
+                    <div class="col-span-1 md:col-span-2 lg:col-span-10 group hover-trigger">
+                        <a href="lanterns.html" class="block overflow-hidden">
+                            <div
+                                class="aspect-[16/9] bg-[url('mujcreel1.jpg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </a>
+                        <div class="mt-3 flex justify-between items-start">
+                            <h3 class="font-sans text-2xl uppercase">Thousand Lanterns Ball Teaser</h3>
+                            <p class="font-mono text-xs text-rift-blue mt-1">Videography • '26</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 (Square) -->
+                    <div class="col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-2 group hover-trigger">
+                        <a href="#" class="block overflow-hidden">
+                            <div
+                                class="aspect-square bg-[url('https://placehold.co/600x600/FFFFFF/002080?text=ZEN+GARDEN')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </a>
+                        <div class="mt-3 flex justify-between items-start">
+                            <h3 class="font-sans text-2xl uppercase">Zen Garden</h3>
+                            <p class="font-mono text-xs text-rift-blue mt-1">ART • '23</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 (Wide) -->
+                    <div class="col-span-1 md:col-span-1 lg:col-span-6 group hover-trigger pt-12">
+                        <a href="#" class="block overflow-hidden">
+                            <div
+                                class="aspect-[16/9] bg-[url('https://placehold.co/900x500/FFFFFF/002080?text=EDITORIAL+LAYOUT')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </a>
+                        <div class="mt-3 flex justify-between items-start">
+                            <h3 class="font-sans text-2xl uppercase">Editorial</h3>
+                            <p class="font-mono text-xs text-rift-blue mt-1">PRINT • '23</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-rift-white text-rift-black py-20 px-4 text-center border-t border-rift-black z-10">
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <h2 class="font-mono text-sm tracking-widest text-rift-blue">READY TO CREATE?</h2>
+                    <a href="mailto:shun@example.com"
+                        class="font-sans text-6xl md:text-8xl hover:text-rift-blue transition-colors hover-trigger">LET'S
+                        TALK</a>
+                    <div class="flex justify-center gap-8 text-2xl mt-8 md:hidden">
+                        <a href="#" class="hover:text-rift-blue transition-colors"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-rift-blue transition-colors"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-rift-blue transition-colors"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <p class="font-mono text-xs text-rift-black mt-12">© 2026 SHUN FUKUI.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

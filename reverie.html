@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVERIE - SHUN FUKUI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rift-white': '#FFFFFF',
+                        'rift-black': '#111111',
+                        'rift-blue': '#002080',
+                        'rift-grey': '#E5E5E5',
+                    },
+                    fontFamily: {
+                        'sans': ['Archivo Black', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                    cursor: {
+                        'none': 'none',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body
+    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"
+        class="fixed top-0 left-0 w-3 h-3 bg-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
+    </div>
+    <div id="cursor-ring"
+        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="relative z-10 flex flex-col md:flex-row flex-grow min-h-screen">
+
+        <!-- Side Panel (Persistent Header) -->
+        <aside
+            class="md:w-1/4 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r-2 border-rift-black bg-rift-white z-20">
+            <div>
+                <a href="index.html" class="block group">
+                    <h1 class="font-sans text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
+                        data-hover-text="BACK">SHUN<br>FUKUI</h1>
+                </a>
+                <p class="font-mono text-rift-blue text-xs tracking-widest">CREATIVE // DESIGNER</p>
+            </div>
+
+            <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
+                <p>BASED IN JAPAN & AUSTRALIA</p>
+                <p>2026</p>
+                <!-- Back Link Example -->
+                <div class="pt-4">
+                    <a href="index.html" class="text-rift-blue hover:text-rift-black hover-trigger">[ < BACK ]</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Scrollable Area -->
+        <main class="md:w-3/4 md:ml-auto flex flex-col min-h-screen">
+
+            <!-- Header / Tape Placeholder -->
+            <div
+                class="bg-rift-white text-rift-blue py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
+                <h2 class="font-sans text-xl tracking-widest">PROJECT: REVERIE</h2>
+                <span class="font-mono text-xs">UX/UI HACKATHON</span>
+            </div>
+
+            <!-- Content -->
+            <section class="flex-grow p-4 md:p-12 animate-fade-in">
+                <!-- Empty for now as requested -->
+                <h1 class="font-sans text-6xl md:text-8xl mb-4">REVERIE</h1>
+                <p class="font-mono text-rift-blue max-w-xl">
+                    Project content coming soon...
+                </p>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-rift-white text-rift-black py-20 px-4 text-center border-t border-rift-black mt-auto">
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <h2 class="font-mono text-sm tracking-widest text-rift-blue">NEXT PROJECT?</h2>
+                    <a href="index.html"
+                        class="font-sans text-4xl md:text-6xl hover:text-rift-blue transition-colors hover-trigger">VIEW
+                        ALL WORK</a>
+                    <p class="font-mono text-xs text-rift-black mt-12">© 2026 SHUN FUKUI.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Re-use script for cursor -->
+    <script src="script.js"></script>
+    <script>
+        // Simple manual fade-in helper if styles.css doesn't have it explicitly
+        document.querySelector('section').style.opacity = '0';
+        setTimeout(() => {
+            document.querySelector('section').style.transition = 'opacity 1s';
+            document.querySelector('section').style.opacity = '1';
+        }, 100);
+    </script>
+</body>
+
+</html>
