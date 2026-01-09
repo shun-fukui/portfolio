@@ -15,10 +15,13 @@
                         'rift-black': '#111111',
                         'rift-blue': '#002080',
                         'rift-grey': '#E5E5E5',
+                        'lantern-dark': '#050510',
+                        'lantern-gold': '#F4ECAB',
                     },
                     fontFamily: {
                         'sans': ['Archivo Black', 'sans-serif'],
                         'mono': ['JetBrains Mono', 'monospace'],
+                        'montreal': ['PP Neue Montreal', 'sans-serif'],
                     },
                     cursor: {
                         'none': 'none',
@@ -31,19 +34,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="preload" as="image" href="mujcreel_images/mujcreelhero.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body
-    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen">
+    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen font-montreal font-medium">
 
     <!-- Custom Cursor -->
     <div id="cursor-dot"
-        class="fixed top-0 left-0 w-3 h-3 bg-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
+        class="fixed top-0 left-0 w-3 h-3 bg-lantern-gold rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
     </div>
     <div id="cursor-ring"
-        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
+        class="fixed top-0 left-0 w-8 h-8 border-2 border-lantern-gold rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
     </div>
 
     <!-- Main Content Layout -->
@@ -51,57 +55,98 @@
 
         <!-- Side Panel (Persistent Header) -->
         <aside
-            class="md:w-1/4 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
+            class="md:w-1/5 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
                 <a href="index.html" class="block group">
                     <h1 class="font-sans text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
                         data-hover-text="BACK">SHUN<br>FUKUI</h1>
                 </a>
-                <p class="font-mono text-rift-blue text-xs tracking-widest">CREATIVE // DESIGNER</p>
+                <p class="font-mono text-lantern-gold text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
+                <nav class="hidden md:flex flex-col gap-2 text-lg font-sans font-bold">
+                    <a href="#" class="hover:text-lantern-gold hover-trigger">ARCHIVE</a>
+                    <a href="about.html" class="hover:text-lantern-gold hover-trigger">ABOUT</a>
+                    <a href="contact.html" class="hover:text-lantern-gold hover-trigger">CONTACT</a>
+                </nav>
             </div>
 
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
-                <nav class="flex flex-col gap-2 mb-8 text-lg font-sans font-bold">
-                    <a href="index.html" class="hover:text-rift-blue hover-trigger">WORKS</a>
-                    <a href="#" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
-                    <a href="#" class="hover:text-rift-blue hover-trigger">ABOUT</a>
-                    <a href="#" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                </nav>
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
                 <div class="pt-4">
-                    <a href="index.html" class="text-3xl text-rift-blue hover:text-rift-black hover-trigger"><i
+                    <a href="index.html" class="text-3xl text-lantern-gold hover:text-rift-black hover-trigger"><i
                             class="fa-solid fa-arrow-left"></i></a>
                 </div>
             </div>
         </aside>
 
         <!-- Main Scrollable Area -->
-        <main class="md:w-3/4 md:ml-auto flex flex-col min-h-screen">
+        <main class="md:w-4/5 md:ml-auto flex flex-col min-h-screen">
 
             <!-- Header -->
             <div
-                class="bg-rift-white text-rift-blue py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
-                <h2 class="font-sans text-xl tracking-widest">PROJECT: LANTERNS</h2>
+                class="bg-lantern-dark text-lantern-gold py-4 px-12 border-b border-lantern-gold z-20 flex justify-between items-center sticky top-0">
+                <h2 class="font-sans text-xl tracking-widest">EVENT MARKETING</h2>
                 <span class="font-mono text-xs">VIDEOGRAPHY</span>
             </div>
 
-            <!-- Content -->
-            <section class="flex-grow p-4 md:p-12 animate-fade-in">
-                <h1 class="font-sans text-4xl md:text-6xl mb-4 leading-none">THOUSAND LANTERNS<br>BALL TEASER</h1>
-                <p class="font-mono text-rift-blue max-w-xl mt-8">
-                    Project content coming soon...
-                </p>
+            <!-- Intro Overlay (Visible for 3s) -->
+            <div id="lantern-intro"
+                class="fixed inset-0 z-50 bg-lantern-dark flex flex-col justify-center overflow-hidden md:left-[20%]">
+                <!-- Row 1 -->
+                <div class="flex gap-4 mb-4 marquee-row" style="width: 200%;">
+                    <img src="mujcreel_images/mujcreel(1).png" class="h-[45vh] w-auto object-cover">
+                    <img src="mujcreel_images/mujcreel(2).png" class="h-[45vh] w-auto object-cover">
+                    <img src="mujcreel_images/mujcreel(3).png" class="h-[45vh] w-auto object-cover">
+                    <img src="mujcreel_images/mujcreel(4).png" class="h-[45vh] w-auto object-cover">
+                    <!-- Duplicate for loop -->
+                    <img src="mujcreel_images/mujcreel(1).png" class="h-[45vh] w-auto object-cover">
+                    <img src="mujcreel_images/mujcreel(2).png" class="h-[45vh] w-auto object-cover">
+                </div>
+                <!-- Row 2 -->
+                <div class="flex gap-4 marquee-row-reverse pl-32" style="width: 200%;">
+                    <img src="mujcreel_images/mujcreel(5).png" class="h-[45vh] w-auto object-cover">
+                    <img src="mujcreel_images/mujcreel(6).jpg" class="h-[45vh] w-auto object-cover">
+                    <img src="mujcreel_images/mujcreel(7).jpg" class="h-[45vh] w-auto object-cover">
+                    <!-- Duplicate -->
+                    <img src="mujcreel_images/mujcreel(5).png" class="h-[45vh] w-auto object-cover">
+                    <img src="mujcreel_images/mujcreel(6).jpg" class="h-[45vh] w-auto object-cover">
+                </div>
+            </div>
+
+            <!-- Main Content (Hero) -->
+            <section id="lantern-hero" class="bg-lantern-dark flex-grow min-h-screen relative z-10">
+                <!-- Hero Image (Fit Width) -->
+                <div class="w-full relative">
+                    <img src="mujcreel_images/mujcreelhero.png" alt="Thousand Lanterns Hero"
+                        class="w-full h-auto opacity-80">
+
+                    <!-- Scroll Hint / Link Container -->
+                    <div class="absolute bottom-12 left-0 w-full text-center">
+                        <a href="#"
+                            class="inline-block border border-lantern-gold px-8 py-3 text-lantern-gold font-mono text-s hover:bg-lantern-gold hover:text-lantern-dark transition-colors">
+                            WATCH FULL VIDEO [COMING SOON]
+                        </a>
+                        <div class="mt-4 text-lantern-gold animate-bounce">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future video/screenshot link -->
+                <div class="h-screen bg-lantern-dark flex items-center justify-center p-12">
+                    <span class="text-lantern-gold font-mono tracking-widest">[VIDEO PAGE CONTENT PLACEHOLDER]</span>
+                </div>
             </section>
 
             <!-- Footer -->
-            <footer class="bg-rift-white text-rift-black py-20 px-4 text-center border-t border-rift-black mt-auto">
+            <footer
+                class="bg-lantern-dark text-lantern-gold py-20 px-4 text-center border-t border-lantern-gold mt-auto">
                 <div class="max-w-4xl mx-auto space-y-8">
-                    <h2 class="font-mono text-sm tracking-widest text-rift-blue">NEXT PROJECT?</h2>
+                    <h2 class="font-mono text-sm tracking-widest text-lantern-gold">NEXT PROJECT?</h2>
                     <a href="index.html"
-                        class="font-sans text-4xl md:text-6xl hover:text-rift-blue transition-colors hover-trigger">VIEW
+                        class="font-sans text-4xl md:text-6xl hover:text-white transition-colors hover-trigger">VIEW
                         ALL WORK</a>
-                    <p class="font-mono text-xs text-rift-black mt-12">© 2026 SHUN FUKUI.</p>
+                    <p class="font-mono text-xs text-lantern-gold mt-12">© 2026 SHUN FUKUI.</p>
                 </div>
             </footer>
         </main>
@@ -109,11 +154,32 @@
 
     <script src="script.js"></script>
     <script>
-        document.querySelector('section').style.opacity = '0';
+        // Intro Animation Logic
+        const intro = document.getElementById('lantern-intro');
+        const hero = document.getElementById('lantern-hero');
+        const rows = document.querySelectorAll('.marquee-row, .marquee-row-reverse');
+
+        // Simple pan effect via CSS classes or manual animation
+        // We'll rely on a simple CSS animation added dynamically or inline
+        // Actually, let's keep it simple: translate transition
+
         setTimeout(() => {
-            document.querySelector('section').style.transition = 'opacity 1s';
-            document.querySelector('section').style.opacity = '1';
+            // Start Pan
+            rows[0].style.transform = 'translateX(-20%)';
+            rows[0].style.transition = 'transform 3s linear';
+            rows[1].style.transform = 'translateX(-20%)';
+            rows[1].style.transition = 'transform 3s linear';
         }, 100);
+
+        setTimeout(() => {
+            intro.style.transition = 'opacity 1s ease-out';
+            intro.style.opacity = '0';
+
+            // Cleanup after fade
+            setTimeout(() => {
+                intro.remove();
+            }, 1000);
+        }, 3000);
     </script>
 </body>
 

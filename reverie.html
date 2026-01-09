@@ -19,6 +19,7 @@
                     fontFamily: {
                         'sans': ['Archivo Black', 'sans-serif'],
                         'mono': ['JetBrains Mono', 'monospace'],
+                        'montreal': ['PP Neue Montreal', 'sans-serif'],
                     },
                     cursor: {
                         'none': 'none',
@@ -36,7 +37,7 @@
 </head>
 
 <body
-    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen">
+    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen font-montreal font-medium">
 
     <!-- Custom Cursor -->
     <div id="cursor-dot"
@@ -51,27 +52,32 @@
 
         <!-- Side Panel (Persistent Header) -->
         <aside
-            class="md:w-1/4 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r-2 border-rift-black bg-rift-white z-20">
+            class="md:w-1/5 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
                 <a href="index.html" class="block group">
                     <h1 class="font-sans text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
                         data-hover-text="BACK">SHUN<br>FUKUI</h1>
                 </a>
-                <p class="font-mono text-rift-blue text-xs tracking-widest">CREATIVE // DESIGNER</p>
+                <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
+                <nav class="hidden md:flex flex-col gap-2 text-lg font-sans font-bold">
+                    <a href="#" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                    <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                    <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                </nav>
             </div>
 
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
-                <!-- Back Link Example -->
                 <div class="pt-4">
-                    <a href="index.html" class="text-rift-blue hover:text-rift-black hover-trigger">[ < BACK ]</a>
+                    <a href="index.html" class="text-3xl text-rift-blue hover:text-rift-black hover-trigger"><i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
             </div>
         </aside>
 
         <!-- Main Scrollable Area -->
-        <main class="md:w-3/4 md:ml-auto flex flex-col min-h-screen">
+        <main class="md:w-4/5 md:ml-auto flex flex-col min-h-screen">
 
             <!-- Header / Tape Placeholder -->
             <div

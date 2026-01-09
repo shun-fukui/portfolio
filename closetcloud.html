@@ -13,13 +13,14 @@
                     colors: {
                         'rift-white': '#FFFFFF',
                         'rift-black': '#111111',
-                        'rift-blue': '#8F0202',
+                        'rift-red': '#8F0202',
                         'rift-grey': '#E5E5E5',
                         'rift-beige': '#FFF5EA',
                     },
                     fontFamily: {
                         'sans': ['Archivo Black', 'sans-serif'],
                         'mono': ['JetBrains Mono', 'monospace'],
+                        'montreal': ['PP Neue Montreal', 'sans-serif'],
                     },
                     cursor: {
                         'none': 'none',
@@ -37,14 +38,14 @@
 </head>
 
 <body
-    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen">
+    class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-red selection:text-white flex flex-col min-h-screen font-montreal font-medium">
 
     <!-- Custom Cursor -->
     <div id="cursor-dot"
-        class="fixed top-0 left-0 w-3 h-3 bg-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
+        class="fixed top-0 left-0 w-3 h-3 bg-rift-red rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
     </div>
     <div id="cursor-ring"
-        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
+        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-red rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
     </div>
 
     <!-- Main Content Layout -->
@@ -52,104 +53,121 @@
 
         <!-- Side Panel (Persistent Header) -->
         <aside
-            class="md:w-1/4 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
+            class="md:w-1/5 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
                 <a href="index.html" class="block group">
                     <h1 class="font-sans text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
                         data-hover-text="BACK">SHUN<br>FUKUI</h1>
                 </a>
-                <p class="font-mono text-rift-blue text-xs tracking-widest">CREATIVE // DESIGNER</p>
+                <p class="font-mono text-rift-red text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
+                <nav class="hidden md:flex flex-col gap-2 text-lg font-sans font-bold">
+                    <a href="#" class="hover:text-rift-red hover-trigger">ARCHIVE</a>
+                    <a href="about.html" class="hover:text-rift-red hover-trigger">ABOUT</a>
+                    <a href="contact.html" class="hover:text-rift-red hover-trigger">CONTACT</a>
+                </nav>
             </div>
 
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
-                <nav class="flex flex-col gap-2 mb-8 text-lg font-sans font-bold">
-                    <a href="index.html" class="hover:text-rift-blue hover-trigger">WORKS</a>
-                    <a href="#" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
-                    <a href="#" class="hover:text-rift-blue hover-trigger">ABOUT</a>
-                    <a href="#" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                </nav>
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
                 <div class="pt-4">
-                    <a href="index.html" class="text-3xl text-rift-blue hover:text-rift-black hover-trigger"><i
+                    <a href="index.html" class="text-3xl text-rift-red hover:text-rift-black hover-trigger"><i
                             class="fa-solid fa-arrow-left"></i></a>
                 </div>
             </div>
         </aside>
 
         <!-- Main Scrollable Area -->
-        <main class="md:w-3/4 md:ml-auto flex flex-col min-h-screen">
+        <main class="md:w-4/5 md:ml-auto flex flex-col min-h-screen">
 
             <!-- Header -->
             <div
-                class="bg-rift-white text-rift-blue py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
+                class="bg-rift-white text-rift-red py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
                 <h2 class="font-sans text-xl tracking-widest">UX PROJECT</h2>
                 <span class="font-mono text-xs">UX DESIGN</span>
             </div>
 
             <!-- Content -->
-            <section class="bg-rift-beige flex-grow p-4 md:p-12 animate-fade-in font-['Arial'] text-rift-black">
+            <section class="bg-rift-beige flex-grow p-4 md:p-12 animate-fade-in font-montreal text-rift-black">
 
                 <!-- Hero Section (Full Width, No Border) -->
                 <div class="h-[85vh] w-full mb-24 overflow-hidden">
-                    <img src="closetcloud box.png" alt="ClosetCloud Box" class="w-full h-full object-cover">
+                    <img src="closetcloud_images/closetcloud box.png" alt="ClosetCloud Box"
+                        class="w-full h-full object-cover">
                 </div>
 
                 <div class="space-y-24">
                     <!-- 1. Key Features -->
                     <section class="pl-6 md:pl-12">
-                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
-                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">01 // FEATURE</h2>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">01 ★ FEATURE</h2>
                             <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Key Features</h3>
                         </div>
 
-                        <div class="space-y-12 max-w-4xl">
-                            <div>
-                                <h4 class="font-bold mb-2 text-xl">Main Feature</h4>
-                                <p class="text-md leading-relaxed">
-                                    ClosetCloud aims to promote clothing sustainability by offering people the option to
-                                    rent clothes for a much cheaper price.
-                                </p>
+                        <div class="space-y-12 max-w-6xl">
+                            <!-- Main Feature Redesign -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Rent
+                                        it, Rock it, Return it!</h4>
+                                    <p class="text-md leading-relaxed">
+                                        ClosetCloud aims to promote clothing sustainability by offering people the
+                                        option to
+                                        rent clothes for a much cheaper price.
+                                    </p>
+                                </div>
+                                <div class="flex justify-center">
+                                    <img src="closetcloud_images/closetCloud(2).png" alt="Mobile App Interface"
+                                        class="w-2/3 md:w-full max-w-sm rounded-[2rem] shadow-xl">
+                                </div>
                             </div>
 
-                            <div>
-                                <h4 class="font-bold mb-6">Features</h4>
+                            <div class="mt-24">
+                                <h4 class="font-bold mb-8 text-3xl font-sans leading-tight text-rift-red">Features</h4>
                                 <!-- 2x2 Grid -->
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                                     <!-- Feature 1 -->
                                     <div class="space-y-3">
-                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
-                                        <span class="block font-bold">Condition Report</span>
-                                        <p class="text-sm leading-relaxed">Lenders must complete a condition report when
+                                        <img src="closetcloud_images/conditionReport.png" alt="Condition Report"
+                                            class="w-full h-auto border border-rift-black">
+                                        <span class="block font-bold text-2xl">Condition Report</span>
+                                        <p class="text-md leading-relaxed">Lenders must complete a condition report
+                                            when
                                             lending out an item of clothing, describing the item’s quality. Upon
-                                            receiving the item, the renter cross-checks with the condition report.</p>
+                                            receiving the item, the renter cross-checks with the condition report.
+                                        </p>
                                     </div>
 
                                     <!-- Feature 2 -->
                                     <div class="space-y-3">
-                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
-                                        <span class="block font-bold">Sizing Compatibility</span>
-                                        <p class="text-sm leading-relaxed">Users can save their body measurements on
+                                        <img src="closetcloud_images/sizingCompatibility.png" alt="Sizing Compatibility"
+                                            class="w-full h-auto border border-rift-black">
+                                        <span class="block font-bold text-2xl">Sizing Compatibility</span>
+                                        <p class="text-md leading-relaxed">Users can save their body measurements on
                                             their profile, allowing them to use the sizing compatibility feature on
                                             different products.</p>
                                     </div>
 
                                     <!-- Feature 3 -->
                                     <div class="space-y-3">
-                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
-                                        <span class="block font-bold">QR Code</span>
-                                        <p class="text-sm leading-relaxed">Renters receive a unique QR code which can be
+                                        <img src="closetcloud_images/qrCode.png" alt="QR Code"
+                                            class="w-full h-auto border border-rift-black">
+                                        <span class="block font-bold text-2xl">QR Code</span>
+                                        <p class="text-md leading-relaxed">Renters receive a unique QR code which
+                                            can be
                                             scanned by the lender when receiving the item. This ensures smooth
                                             verification of identity.</p>
                                     </div>
 
                                     <!-- Feature 4 -->
                                     <div class="space-y-3">
-                                        <div class="aspect-video bg-rift-grey border border-rift-black"></div>
-                                        <span class="block font-bold">Bargain to buy</span>
-                                        <p class="text-sm leading-relaxed">Users have the option to bargain to buy a
-                                            clothing item. This allows users to save money from repeatedly renting and
+                                        <img src="closetcloud_images/bargainToBuy.png" alt="Bargain to buy"
+                                            class="w-full h-auto border border-rift-black">
+                                        <span class="block font-bold text-2xl">Bargain to buy</span>
+                                        <p class="text-md leading-relaxed">Users have the option to bargain to buy a
+                                            clothing item. This allows users to save money from repeatedly renting
+                                            and
                                             further strengthen sustainability.</p>
                                     </div>
 
@@ -160,42 +178,53 @@
 
                     <!-- 2. What can ClosetCloud Solve? -->
                     <section class="pl-6 md:pl-12">
-                        <div class="border-l-4 border-rift-black pl-6 -ml-6 mb-6">
-                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">02 // PROBLEM & SOLUTION
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">02 ★ PROBLEM & SOLUTION
                             </h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">What can<br>ClosetCloud
+                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">What can ClosetCloud
                                 Solve?</h3>
                         </div>
 
-                        <div class="space-y-8 max-w-2xl">
+                        <div class="space-y-8 max-w-6xl">
                             <div>
-                                <h4 class="font-bold mb-2">Problem</h4>
-                                <p class="text-sm leading-relaxed mb-4">ClosetCloud addresses the problem of
+                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Problem</h4>
+                                <p class="text-md leading-relaxed mb-4">ClosetCloud addresses the problem of
                                     overconsumption in the fashion industry, as it causes significant harm to the
                                     environment.</p>
 
-                                <div class="pl-4 border-l-2 border-rift-grey space-y-4">
-                                    <div>
-                                        <span class="block font-bold text-xs uppercase text-rift-blue">Waste</span>
-                                        <p class="text-sm leading-relaxed">92 million tonnes of textile waste is
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                                    <!-- Waste Card -->
+                                    <div class="space-y-3">
+                                        <div
+                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center">
+                                            <span class="font-mono text-xs text-rift-blue tracking-widest">[IMAGE
+                                                PLACEHOLDER]</span>
+                                        </div>
+                                        <span class="block font-bold text-2xl text-rift-red">Waste</span>
+                                        <p class="text-md leading-relaxed">92 million tonnes of textile waste is
                                             generated per year worldwide with around 85% of textiles ending up in
                                             landfills or are burnt.</p>
                                     </div>
-                                    <div>
-                                        <span class="block font-bold text-xs uppercase text-rift-blue">Fast Fashion
-                                            Culture</span>
-                                        <p class="text-sm leading-relaxed">Trendy clothes and styles are produced
+
+                                    <!-- Fast Fashion Card -->
+                                    <div class="space-y-3">
+                                        <div
+                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center">
+                                            <span class="font-mono text-xs text-rift-blue tracking-widest">[IMAGE
+                                                PLACEHOLDER]</span>
+                                        </div>
+                                        <span class="block font-bold text-2xl text-rift-red">Fast Fashion Culture</span>
+                                        <p class="text-md leading-relaxed">Trendy clothes and styles are produced
                                             quickly in a large volume and sold at a cheap price. This encourages
-                                            consumers to purchase frequently and dispose of items after only a few
-                                            wears. This creates a cycle of buying and under-using, causing significant
-                                            sustainable and social issues.</p>
+                                            consumers to purchase frequently and dispose.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <h4 class="font-bold mb-2">Our Solution</h4>
-                                <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that connects
+                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Our Solution
+                                </h4>
+                                <p class="text-md leading-relaxed">A peer-to-peer clothing rental platform that connects
                                     people who want to rent, lend, or share affordable outfits directly from one
                                     another’s closets.</p>
                             </div>
@@ -204,21 +233,22 @@
 
                     <!-- 3. User Flow -->
                     <section class="pl-6 md:pl-12">
-                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
-                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">03 // FLOW</h2>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">03 ★ FLOW</h2>
                             <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">User Flow</h3>
                         </div>
 
                         <!-- Diagram Placeholder -->
                         <div class="w-full bg-rift-white flex items-center justify-center overflow-hidden">
-                            <img src="User%20Journey.png" alt="User Journey Map" class="w-full h-auto object-cover">
+                            <img src="closetcloud_images/closetCloud(3).png" alt="User Journey Map"
+                                class="w-full h-auto object-cover">
                         </div>
                     </section>
 
                     <!-- 4. Ideation Process -->
                     <section class="pl-6 md:pl-12">
-                        <div class="border-l-4 border-rift-black pl-6 -ml-6 mb-6">
-                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">04 // IDEATION</h2>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">04 ★ IDEATION</h2>
                             <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Ideation Process</h3>
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-sm max-w-2xl">
@@ -229,19 +259,20 @@
 
                     <!-- 5. User-Based Evaluations -->
                     <section class="pl-6 md:pl-12">
-                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
-                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">05 // RESEARCH</h2>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">05 ★ RESEARCH</h2>
                             <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">User-Based Evaluations
                             </h3>
                         </div>
 
                         <div class="space-y-8 max-w-2xl">
                             <div>
-                                <h4 class="font-bold mb-2">Task Scenarios</h4>
+                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Task Scenarios
+                                </h4>
                                 <p class="text-sm leading-relaxed mb-2">Participants went through a guided interactive
                                     sequence through our Figma prototype.</p>
                                 <div class="pl-4 border-l-2 border-rift-grey">
-                                    <span class="block font-bold text-xs uppercase text-rift-blue">Findings</span>
+                                    <span class="block font-bold text-xs uppercase text-rift-red">Findings</span>
                                     <ul class="list-disc pl-5 mt-2 text-sm space-y-1">
                                         <li>Participants couldn’t find the ‘order page’ → Move to profile page from
                                             settings</li>
@@ -251,7 +282,8 @@
                             </div>
 
                             <div>
-                                <h4 class="font-bold mb-2">First Click Test & 5-Second Test</h4>
+                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">First Click
+                                    Test & 5-Second Test</h4>
                                 <ul class="list-disc pl-5 text-sm space-y-1">
                                     <li>Highlighted navigational ambiguity</li>
                                     <li>Issues with visual hierarchy</li>
@@ -262,8 +294,8 @@
 
                     <!-- 6. Design Process -->
                     <section class="pl-6 md:pl-12">
-                        <div class="border-l-4 border-rift-black pl-6 -ml-6 mb-6">
-                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">06 // DESIGN</h2>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">06 ★ DESIGN</h2>
                             <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Design Process</h3>
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-sm max-w-2xl">
@@ -274,13 +306,16 @@
 
                     <!-- 7. Video (New) -->
                     <section class="pl-6 md:pl-12">
-                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-6">
-                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">07 // PREVIEW</h2>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-6">
+                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">07 ★ PREVIEW</h2>
                             <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Video of ClosetCloud
                             </h3>
                         </div>
                         <div class="w-full aspect-video bg-black flex items-center justify-center">
-                            <span class="text-white font-mono text-xs">[VIDEO PLACEHOLDER]</span>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7emcm6YeGYQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </section>
 
@@ -288,14 +323,14 @@
                     <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-12">
                         <!-- Left: Screenshot -->
                         <div class="order-2 md:order-1">
-                            <img src="closetcloud_visual.png" alt="ClosetCloud Screens"
+                            <img src="closetcloud_images/closetcloud_visual.png" alt="ClosetCloud Screens"
                                 class="w-full shadow-2xl border-2 border-rift-black">
                         </div>
                         <!-- Right: Quote -->
                         <div class="order-1 md:order-2">
-                            <h3 class="font-['Times_New_Roman'] text-xl md:text-2xl leading-tight">
-                                “We hope these features make renting with ClosetCloud feel safer, more enjoyable, and
-                                boost confidence, and overall, encourage more sustainable habits in the clothing world.”
+                            <h3 class="font-['Times_New_Roman'] text-lg md:text-xl leading-tight">
+                                “We hope ClosetCloud can create a safer, more enjoyable, <br>and encourage more
+                                sustainable habits in the clothing world.”
                             </h3>
                         </div>
                     </section>
@@ -305,9 +340,9 @@
             <!-- Footer -->
             <footer class="bg-rift-white text-rift-black py-20 px-4 text-center border-t border-rift-black mt-auto">
                 <div class="max-w-4xl mx-auto space-y-8">
-                    <h2 class="font-mono text-sm tracking-widest text-rift-blue">NEXT PROJECT?</h2>
+                    <h2 class="font-mono text-sm tracking-widest text-rift-red">NEXT PROJECT?</h2>
                     <a href="index.html"
-                        class="font-sans text-4xl md:text-6xl hover:text-rift-blue transition-colors hover-trigger">VIEW
+                        class="font-sans text-4xl md:text-6xl hover:text-rift-red transition-colors hover-trigger">VIEW
                         ALL WORK</a>
                     <p class="font-mono text-xs text-rift-black mt-12">© 2026 SHUN FUKUI.</p>
                 </div>
