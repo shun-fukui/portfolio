@@ -13,7 +13,7 @@
                     colors: {
                         'rift-white': '#FFFFFF',
                         'rift-black': '#111111',
-                        'rift-blue': '#002080',
+                        'rift-blue': '#005772',
                         'rift-grey': '#E5E5E5',
                     },
                     fontFamily: {
@@ -75,7 +75,7 @@
         <!-- Main Scrollable Area -->
         <main class="md:w-4/5 md:ml-auto flex flex-col min-h-screen">
 
-            <!-- Header / Tape Placeholder -->
+            <!-- Header -->
             <div
                 class="bg-rift-white text-rift-blue py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
                 <div class="flex items-center gap-4">
@@ -96,12 +96,304 @@
             </div>
 
             <!-- Content -->
-            <section class="flex-grow p-4 md:p-12 animate-fade-in">
-                <!-- Empty for now as requested -->
-                <h1 class="font-sans text-6xl md:text-8xl mb-4">REVERIE</h1>
-                <p class="font-mono text-rift-blue max-w-xl">
-                    Project content coming soon...
-                </p>
+            <section class="flex-grow p-4 md:p-12 animate-fade-in font-montreal">
+
+                <!-- Hero Section & Intro -->
+                <div class="space-y-12 max-w-6xl mx-auto">
+
+                    <!-- Hero Image -->
+                    <div class="w-full aspect-video bg-rift-grey border border-rift-black overflow-hidden relative">
+                        <!-- Placeholder image as per user visual 1 instructions (using reverie box.png for now as hero-ish) -->
+                        <img src="reverie box.png" alt="Reverie Hero" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Title & Tagline -->
+                    <div class="text-center md:text-left space-y-4">
+                        <h1 class="font-sans text-5xl md:text-8xl tracking-tighter uppercase leading-none">Reverie</h1>
+                        <p class="font-mono text-rift-blue text-lg tracking-widest">REST, ROUTINES, RESULTS</p>
+                        <p class="text-xl md:text-2xl leading-relaxed max-w-3xl mt-8">
+                            Developed an innovative design solution to enhance well-being and help people lead more
+                            balanced lives during a UI/UX Hackathon.
+                        </p>
+                    </div>
+
+                    <!-- Metadata Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-rift-black py-8">
+                        <div>
+                            <span class="block font-mono text-xs text-rift-blue tracking-widest mb-1">TYPE</span>
+                            <span class="font-bold">UI/UX Hackathon</span>
+                        </div>
+                        <div>
+                            <span class="block font-mono text-xs text-rift-blue tracking-widest mb-1">ROLE</span>
+                            <span class="font-bold">Product Designer</span>
+                        </div>
+                        <div>
+                            <span class="block font-mono text-xs text-rift-blue tracking-widest mb-1">TEAM</span>
+                            <span class="font-bold">4 People</span>
+                        </div>
+                        <div>
+                            <span class="block font-mono text-xs text-rift-blue tracking-widest mb-1">DURATION</span>
+                            <span class="font-bold">3 Days</span>
+                        </div>
+                        <div>
+                            <span class="block font-mono text-xs text-rift-blue tracking-widest mb-1">TOOLS</span>
+                            <span class="font-bold">Figma</span>
+                        </div>
+                    </div>
+
+                    <!-- 1. The Challenge & Discovery -->
+                    <section class="py-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">01 ★ DISCOVERY</h2>
+                            <h3 class="font-sans text-3xl md:text-5xl uppercase">The Challenge & Discovery</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">Context</h4>
+                                    <p class="text-md leading-relaxed">The team initially discussed the importance of
+                                        breakfast for university students.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">The "Why" Analysis</h4>
+                                    <p class="text-md leading-relaxed">Through discussion, the team realized students
+                                        don't eat breakfast because they "can't wake up".</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">Root Cause</h4>
+                                    <p class="text-md leading-relaxed">The accumulation of fatigue from bad sleep is the
+                                        core issue that prevents a healthy morning routine.</p>
+                                </div>
+                                <div class="bg-rift-blue/5 p-6 border-l-2 border-rift-blue">
+                                    <h4 class="font-bold text-lg mb-2 text-rift-blue">Key Insight</h4>
+                                    <p class="text-md italic leading-relaxed">"On days with a good quality of sleep,
+                                        people feel better in the morning. This naturally leads to breakfast to have a
+                                        good start to the day."</p>
+                                </div>
+                            </div>
+                            <div
+                                class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden">
+                                <img src="reverie_images/reverie(2).png" alt="Challenge Analysis"
+                                    class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. Research & Data -->
+                    <section class="py-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">02 ★ RESEARCH</h2>
+                            <h3 class="font-sans text-3xl md:text-5xl uppercase">Research & Data</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+                            <!-- Left: Breakfast Stats (Pie Chart) -->
+                            <div
+                                class="bg-rift-white border border-rift-black p-8 rounded-[2rem] shadow-lg text-center h-full flex flex-col justify-between">
+                                <h4 class="font-bold text-xl md:text-2xl text-rift-blue mb-8">University Students'
+                                    Breakfast</h4>
+                                <div class="w-full aspect-square max-w-sm mx-auto mb-8 relative">
+                                    <img src="reverie_images/reverie(3).png" alt="Breakfast Data Pie Chart"
+                                        class="w-full h-full object-contain">
+                                </div>
+                                <p class="text-lg font-bold leading-relaxed">
+                                    <span class="text-rift-blue text-4xl block mb-2 font-sans">58%</span>
+                                    mentioned <span class="bg-rift-blue text-rift-white px-2">sleep</span> as a reason
+                                    to why they won't eat breakfast.
+                                </p>
+                            </div>
+
+                            <!-- Right: Why Sleep Matters (Tree Diagram) -->
+                            <div
+                                class="bg-rift-white p-8 rounded-[2rem] border border-rift-black h-full flex flex-col items-center justify-center text-center shadow-lg">
+                                <h4 class="font-bold text-2xl text-rift-blue mb-4">Why Sleep Matters</h4>
+
+                                <!-- Tree Structure -->
+                                <div class="flex flex-col items-center w-full">
+                                    <!-- Vertical Line -->
+                                    <div class="h-8 w-px bg-rift-black"></div>
+                                    <!-- Horizontal Branch -->
+                                    <div class="h-px bg-rift-black w-4/5 relative">
+                                        <!-- Drop Lines -->
+                                        <div class="absolute left-0 top-0 h-4 w-px bg-rift-black"></div>
+                                        <div class="absolute left-1/2 top-0 h-4 w-px bg-rift-black -translate-x-1/2">
+                                        </div>
+                                        <div class="absolute right-0 top-0 h-4 w-px bg-rift-black"></div>
+                                    </div>
+
+                                    <!-- 3 Items Grid -->
+                                    <div class="grid grid-cols-3 gap-2 w-full mt-4 mb-8">
+                                        <div class="flex flex-col items-center">
+                                            <i class="fa-solid fa-caret-down text-rift-blue mb-2"></i>
+                                            <p class="text-xs md:text-sm font-bold leading-tight">Loss of<br>appetite
+                                                and<br>metabolism</p>
+                                        </div>
+                                        <div class="flex flex-col items-center">
+                                            <i class="fa-solid fa-caret-down text-rift-blue mb-2"></i>
+                                            <p class="text-xs md:text-sm font-bold leading-tight">Low
+                                                focus<br>and<br>Performance</p>
+                                        </div>
+                                        <div class="flex flex-col items-center">
+                                            <i class="fa-solid fa-caret-down text-rift-blue mb-2"></i>
+                                            <p class="text-xs md:text-sm font-bold leading-tight">Affects
+                                                mood<br>and<br>quality of life</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Arrow Down -->
+                                    <i class="fa-solid fa-arrow-down text-xl text-rift-black mb-4"></i>
+
+                                    <!-- Solution Box 1 -->
+                                    <div
+                                        class="bg-blue-100 px-6 py-3 rounded-full border border-rift-black mb-4 w-full max-w-xs">
+                                        <span class="font-bold text-sm">Preventing Sleep Deprivation</span>
+                                    </div>
+
+                                    <!-- Arrow Down -->
+                                    <i class="fa-solid fa-arrow-down text-xl text-rift-black mb-4"></i>
+
+                                    <!-- Solution Box 2 -->
+                                    <div
+                                        class="bg-blue-100 px-6 py-3 rounded-lg border border-rift-black w-full max-w-xs">
+                                        <p class="font-bold text-sm"><span class="text-xl block">7-9 hours</span> of
+                                            uninterrupted<br>sleep is recommended</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- 3. The Solution -->
+                    <section class="py-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">03 ★ SOLUTION</h2>
+                            <h3 class="font-sans text-3xl md:text-5xl uppercase">The Solution</h3>
+                        </div>
+
+                        <p class="text-2xl font-bold text-center mb-16">"Your sleep has to be perfect. In your own way!"
+                        </p>
+
+                        <div class="space-y-24">
+                            <!-- Feature 1 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <span class="font-mono text-rift-blue text-xs mb-2 block">FEATURE 01</span>
+                                    <h4 class="font-sans text-3xl mb-4">Active Awakening</h4>
+                                    <p class="text-md leading-relaxed mb-4 font-bold">An alarm that only stops based on
+                                        step count.</p>
+                                    <ul class="space-y-4 text-sm">
+                                        <li><strong>Goal:</strong> To fully wake the body up, utilizing the phone's
+                                            built-in step counter to force the user to walk.</li>
+                                        <li><strong>UI Detail:</strong> The screen transitions from red to yellow to
+                                            green to visually track progress.</li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden">
+                                    <img src="reverie_images/reverie(4).png" alt="Active Awakening UI"
+                                        class="absolute inset-0 w-full h-full object-cover">
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                                <div
+                                    class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden order-2 md:order-1">
+                                    <img src="reverie_images/reverie(5).png" alt="Routine Quality UI"
+                                        class="absolute inset-0 w-full h-full object-cover">
+                                </div>
+                                <div class="order-1 md:order-2">
+                                    <span class="font-mono text-rift-blue text-xs mb-2 block">FEATURE 02</span>
+                                    <h4 class="font-sans text-3xl mb-4">Routine Quality (Digital Detox)</h4>
+                                    <p class="text-md leading-relaxed mb-4 font-bold">Blocking apps 30 minutes before
+                                        and after sleep.</p>
+                                    <ul class="space-y-4 text-sm">
+                                        <li><strong>Goal:</strong> Maximize the quality of the bedtime and morning
+                                            routines by removing distractions.</li>
+                                        <li><strong>Flexibility:</strong> Users can choose which apps to block and
+                                            adjust the timer, giving them freedom until the very end.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <span class="font-mono text-rift-blue text-xs mb-2 block">FEATURE 03</span>
+                                    <h4 class="font-sans text-3xl mb-4">Offloading Anxiety</h4>
+                                    <p class="text-md leading-relaxed mb-4 font-bold">A "Nighttime To-Do List" that
+                                        carries over to the next day.</p>
+                                    <ul class="space-y-4 text-sm">
+                                        <li><strong>Rationale:</strong> Writing a plan reduces bedtime anxiety by
+                                            offloading tasks from working memory.</li>
+                                        <li><strong>Flow:</strong> Users write the list at night → Sleep → It becomes
+                                            their active to-do list the next morning.</li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden">
+                                    <img src="reverie_images/reverie(6).png" alt="Offloading Anxiety UI"
+                                        class="absolute inset-0 w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 4. Reflection & Growth -->
+                    <section class="py-12 mb-12">
+                        <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
+                            <h2 class="font-mono text-rift-blue text-sm tracking-widest mb-4">04 ★ REFLECTION</h2>
+                            <h3 class="font-sans text-3xl md:text-5xl uppercase">Reflection & Growth</h3>
+                        </div>
+
+                        <div class="bg-rift-black text-rift-white p-8 md:p-12 space-y-8">
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 text-rift-blue">Context</h4>
+                                <p class="text-md leading-relaxed">Submitted to "Productthon" (11th Sep) at North
+                                    Theatre.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 text-rift-blue">Outcome</h4>
+                                <p class="text-md leading-relaxed">The project did not win an award, but it was a
+                                    valuable challenge that led to major personal growth.</p>
+                            </div>
+
+                            <div class="border-t border-rift-blue/30 pt-8 mt-8">
+                                <h4 class="font-bold text-2xl mb-6">Key Learnings</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    <div>
+                                        <h5 class="font-bold text-lg mb-2 text-rift-blue">Prototyping Skills</h5>
+                                        <p class="text-sm text-rift-grey">Realized that high-fidelity prototypes
+                                            (interactions and animations) are crucial for user experience, not just
+                                            static flows.</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-lg mb-2 text-rift-blue">Visual Design</h5>
+                                        <p class="text-sm text-rift-grey">Recognized that strong branding and visual
+                                            polish significantly influence how judges perceive the solution.</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-lg mb-2 text-rift-blue">Presentation Skills</h5>
+                                        <p class="text-sm text-rift-grey">Learned that a strong solution can be
+                                            perceived poorly if not presented effectively; nervousness impacted the
+                                            delivery.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="mt-8 aspect-video bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden">
+                            <img src="https://placehold.co/1200x600/E5E5E5/002080?text=REFLECTION"
+                                class="absolute inset-0 w-full h-full object-cover">
+                        </div>
+                    </section>
+
+                </div>
             </section>
 
             <!-- Footer -->
@@ -120,7 +412,6 @@
     <!-- Re-use script for cursor -->
     <script src="script.js"></script>
     <script>
-        // Simple manual fade-in helper if styles.css doesn't have it explicitly
         document.querySelector('section').style.opacity = '0';
         setTimeout(() => {
             document.querySelector('section').style.transition = 'opacity 1s';
