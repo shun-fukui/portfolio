@@ -10,7 +10,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colours: { 'rift-white': '#FFFFFF', 'rift-black': '#111111', 'rift-blue': '#002080', 'rift-grey': '#E5E5E5' },
+                    colors: { 'rift-white': '#FFFFFF', 'rift-black': '#111111', 'rift-blue': '#002080', 'rift-grey': '#E5E5E5' },
                     fontFamily: { 'sans': ['Archivo Black', 'sans-serif'], 'mono': ['JetBrains Mono', 'monospace'], 'montreal': ['PP Neue Montreal', 'sans-serif'] },
                     cursor: { 'none': 'none' }
                 }
@@ -50,6 +50,14 @@
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
+                <div class="pt-4 flex gap-4 text-xl items-center">
+                    <a href="#" class="hover:text-rift-blue transition-colors hover-trigger"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shun-fukui-21229826a/"
+                        class="hover:text-rift-blue transition-colors hover-trigger"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="font-sans hover:text-rift-blue transition-colors hover-trigger">CV</a>
+                </div>
             </div>
         </aside>
 
@@ -74,24 +82,145 @@
             </div>
             <section class="flex-grow p-4 md:p-12 animate-fade-in">
                 <h1 class="font-sans text-6xl md:text-8xl mb-12">ALL WORKS</h1>
-                <ul class="font-mono text-lg space-y-6">
-                    <li class="flex justify-between border-b border-rift-grey pb-2"><span>CLOSETCLOUD [UX]</span>
-                        <span>2026</span>
-                    </li>
-                    <li class="flex justify-between border-b border-rift-grey pb-2"><span>REVERIE [UX]</span>
-                        <span>2025</span>
-                    </li>
-                    <li class="flex justify-between border-b border-rift-grey pb-2"><span>SKIM [BRANDING]</span>
-                        <span>2023</span>
-                    </li>
-                    <li class="flex justify-between border-b border-rift-grey pb-2"><span>LANTERNS [VIDEO]</span>
-                        <span>2026</span>
-                    </li>
-                </ul>
+
+                <div class="font-mono text-lg space-y-4">
+                    <!-- Archive Item 1: Forms of Space -->
+                    <div class="border-b border-rift-grey">
+                        <button onclick="toggleArchive(this)"
+                            class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
+                            <span class="group-hover:pl-4 transition-all duration-300">Forms of Space</span>
+                            <span>Experimental Film - 2024</span>
+                        </button>
+                        <div
+                            class="max-h-0 opacity-0 overflow-hidden transition-all duration-[1500ms] ease-in-out bg-rift-white archive-content">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+                                <div class="md:col-span-2 aspect-video bg-black">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I-KeYT4q7-I"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="md:col-span-1 flex flex-col justify-center">
+                                    <p class="text-sm leading-relaxed max-w-sm">
+                                        An experimental film exploring the forms of space in location, time, and humans.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Archive Item 2: LEC Booklet -->
+                    <div class="border-b border-rift-grey">
+                        <button onclick="toggleArchive(this)"
+                            class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
+                            <span class="group-hover:pl-4 transition-all duration-300">LEC Recruitment Booklet</span>
+                            <span>Booklet Design - 2024</span>
+                        </button>
+                        <div
+                            class="max-h-0 opacity-0 overflow-hidden transition-all duration-[1500ms] ease-in-out bg-rift-white archive-content">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+                                <!-- Changed from grid grid-cols-2 to flex flex-col to stack images -->
+                                <div class="md:col-span-2 flex flex-col gap-4">
+                                    <img src="archive_images/lec_booklet(1).png" class="w-full h-auto">
+                                    <img src="archive_images/lec_booklet(2).png" class="w-full h-auto">
+                                </div>
+                                <div class="md:col-span-1 flex flex-col justify-center">
+                                    <p class="text-sm leading-relaxed max-w-sm">
+                                        Designed a comprehensive recruitment booklet for the Language Exchange Club,
+                                        focusing on clarity and community appeal.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Archive Item 3: MAS Solutions -->
+                    <div class="border-b border-rift-grey">
+                        <button onclick="toggleArchive(this)"
+                            class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
+                            <span class="group-hover:pl-4 transition-all duration-300">MAS Solutions</span>
+                            <span>Business Card Design - 2024</span>
+                        </button>
+                        <div
+                            class="max-h-0 opacity-0 overflow-hidden transition-all duration-[1500ms] ease-in-out bg-rift-white archive-content">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+                                <div class="md:col-span-2 grid grid-cols-2 gap-4">
+                                    <div class="aspect-video bg-rift-grey relative overflow-hidden group">
+                                        <img src="archive_images/Joan BC 1.jpg" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="aspect-video bg-rift-grey relative overflow-hidden group">
+                                        <!-- Empty Placeholder -->
+                                    </div>
+                                </div>
+                                <div class="md:col-span-1 flex flex-col justify-center">
+                                    <p class="text-sm leading-relaxed max-w-sm">
+                                        Rebranding and business card design for MAS Solutions, establishing a
+                                        professional and modern corporate identity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Archive Item 4: LEC Instagram -->
+                    <div class="border-b border-rift-grey">
+                        <button onclick="toggleArchive(this)"
+                            class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
+                            <span class="group-hover:pl-4 transition-all duration-300">LEC Instagram</span>
+                            <span>Social Media Design - 2024</span>
+                        </button>
+                        <div
+                            class="max-h-0 opacity-0 overflow-hidden transition-all duration-[1500ms] ease-in-out bg-rift-white archive-content">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+                                <div class="md:col-span-2 grid grid-cols-2 gap-4 items-start">
+                                    <div class="aspect-square bg-rift-grey relative overflow-hidden group">
+                                        <img src="archive_images/lec_post(1).jpg" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="relative group">
+                                        <!-- Changed second image to natural height to avoid cropping -->
+                                        <img src="archive_images/lec_post(2).png" class="w-full h-auto">
+                                    </div>
+                                </div>
+                                <div class="md:col-span-1 flex flex-col justify-center">
+                                    <p class="text-sm leading-relaxed max-w-sm">
+                                        Social media templates and campaign assets designed to increase engagement and
+                                        visual consistency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
         </main>
     </div>
     <script src="script.js"></script>
+    <script>
+        function toggleArchive(button) {
+            const content = button.nextElementSibling;
+
+            // Toggle
+            if (content.style.maxHeight) {
+                // Close
+                content.style.maxHeight = null;
+                content.classList.add('opacity-0');
+                content.classList.remove('opacity-100');
+            } else {
+                // Open
+                // Close others first (optional, but good for focus)
+                document.querySelectorAll('.archive-content').forEach(el => {
+                    el.style.maxHeight = null;
+                    el.classList.add('opacity-0');
+                    el.classList.remove('opacity-100');
+                });
+
+                content.classList.remove('opacity-0');
+                content.classList.add('opacity-100');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+    </script>
 </body>
 
 </html>
