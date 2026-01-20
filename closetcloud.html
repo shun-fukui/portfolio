@@ -105,10 +105,13 @@
             </div>
 
             <!-- Content -->
-            <section class="bg-rift-white flex-grow p-4 md:p-12 animate-fade-in font-montreal text-rift-black">
+            <!-- Updated padding: px-6 md:px-20 lg:px-32 -->
+            <section
+                class="bg-rift-white flex-grow px-6 py-12 md:px-20 lg:px-32 animate-fade-in font-montreal text-rift-black">
 
                 <!-- Hero Section & Intro -->
-                <div class="space-y-12 max-w-6xl mx-auto mb-24">
+                <!-- Updated max-w-5xl -->
+                <div class="space-y-12 max-w-5xl mx-auto mb-24">
 
                     <!-- Hero Image -->
                     <div class="w-full aspect-video bg-rift-grey border border-rift-black overflow-hidden relative">
@@ -118,10 +121,12 @@
 
                     <!-- Title & Tagline -->
                     <div class="text-center md:text-left space-y-4">
-                        <h1 class="font-sans text-5xl md:text-8xl tracking-tighter uppercase leading-none">ClosetCloud
+                        <!-- Downsized H1 -->
+                        <h1 class="font-sans text-4xl md:text-7xl tracking-tighter uppercase leading-none">ClosetCloud
                         </h1>
-                        <p class="font-mono text-rift-red text-lg tracking-widest">RENT IT, ROCK IT, RETURN IT!</p>
-                        <p class="text-xl md:text-2xl leading-relaxed max-w-3xl mt-8">
+                        <p class="font-mono text-rift-red text-base tracking-widest">RENT IT, ROCK IT, RETURN IT!</p>
+                        <!-- Downsized Intro -->
+                        <p class="text-lg md:text-xl leading-relaxed max-w-3xl mt-8">
                             ClosetCloud aims to promote clothing sustainability by offering people the option to rent
                             clothes for a much cheaper price.
                         </p>
@@ -130,45 +135,41 @@
                     <!-- Metadata Grid -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-rift-black py-8">
                         <div>
-                            <span class="block font-mono text-xs text-rift-red tracking-widest mb-1">TYPE</span>
-                            <span class="font-bold">UX Project</span>
+                            <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">TYPE</span>
+                            <span class="font-bold text-sm">UX Project</span>
                         </div>
                         <div>
-                            <span class="block font-mono text-xs text-rift-red tracking-widest mb-1">ROLE</span>
-                            <span class="font-bold">UX Designer</span>
+                            <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">ROLE</span>
+                            <span class="font-bold text-sm">UX Designer</span>
                         </div>
                         <div>
-                            <span class="block font-mono text-xs text-rift-red tracking-widest mb-1">TEAM</span>
-                            <span class="font-bold">4 People</span>
+                            <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">TEAM</span>
+                            <span class="font-bold text-sm">4 People</span>
                         </div>
                         <div>
-                            <span class="block font-mono text-xs text-rift-red tracking-widest mb-1">DURATION</span>
-                            <span class="font-bold">Aug 2025 - Nov 2025</span>
+                            <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">DURATION</span>
+                            <span class="font-bold text-sm">Aug 2025 - Nov 2025</span>
                         </div>
                         <div>
-                            <span class="block font-mono text-xs text-rift-red tracking-widest mb-1">TOOLS</span>
-                            <span class="font-bold">Figma, Premiere Pro</span>
+                            <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">TOOLS</span>
+                            <span class="font-bold text-sm">Figma, Premiere Pro</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-24 max-w-6xl mx-auto">
+                <div class="space-y-24 max-w-5xl mx-auto">
                     <!-- 1. Key Features -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">01 ★ FEATURE</h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Key Features</h3>
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">01 ★ FEATURE</h2>
+                            <!-- Downsized Section Header -->
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Key Features</h3>
                         </div>
 
                         <div class="space-y-12">
-                            <!-- Main Feature Redesign - Image Only -->
-                            <!-- <div class="flex justify-center mb-12">
-                                <img src="closetcloud_images/closetCloud(2).png" alt="Mobile App Interface"
-                                    class="w-2/3 md:w-full max-w-sm rounded-[2rem] shadow-xl">
-                            </div> -->
-
                             <div class="mt-24">
-                                <h4 class="font-bold mb-8 text-3xl font-sans leading-tight text-rift-red">Features</h4>
+                                <!-- Downsized feature header -->
+                                <h4 class="font-bold mb-8 text-2xl font-sans leading-tight text-rift-red">Features</h4>
                                 <!-- 2x2 Grid -->
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -176,8 +177,8 @@
                                     <div class="space-y-3">
                                         <img src="closetcloud_images/conditionReport.png" alt="Condition Report"
                                             class="w-full h-auto border border-rift-black">
-                                        <span class="block font-bold text-2xl">Condition Report</span>
-                                        <p class="text-md leading-relaxed">Lenders must complete a condition report
+                                        <span class="block font-bold text-xl">Condition Report</span>
+                                        <p class="text-sm leading-relaxed">Lenders must complete a condition report
                                             when
                                             lending out an item of clothing, describing the item’s quality. Upon
                                             receiving the item, the renter cross-checks with the condition report.
@@ -188,8 +189,8 @@
                                     <div class="space-y-3">
                                         <img src="closetcloud_images/sizingCompatibility.png" alt="Sizing Compatibility"
                                             class="w-full h-auto border border-rift-black">
-                                        <span class="block font-bold text-2xl">Sizing Compatibility</span>
-                                        <p class="text-md leading-relaxed">Users can save their body measurements on
+                                        <span class="block font-bold text-xl">Sizing Compatibility</span>
+                                        <p class="text-sm leading-relaxed">Users can save their body measurements on
                                             their profile, allowing them to use the sizing compatibility feature on
                                             different products.</p>
                                     </div>
@@ -198,8 +199,8 @@
                                     <div class="space-y-3">
                                         <img src="closetcloud_images/qrCode.png" alt="QR Code"
                                             class="w-full h-auto border border-rift-black">
-                                        <span class="block font-bold text-2xl">QR Code</span>
-                                        <p class="text-md leading-relaxed">Renters receive a unique QR code which
+                                        <span class="block font-bold text-xl">QR Code</span>
+                                        <p class="text-sm leading-relaxed">Renters receive a unique QR code which
                                             can be
                                             scanned by the lender when receiving the item. This ensures smooth
                                             verification of identity.</p>
@@ -209,8 +210,8 @@
                                     <div class="space-y-3">
                                         <img src="closetcloud_images/bargainToBuy.png" alt="Bargain to buy"
                                             class="w-full h-auto border border-rift-black">
-                                        <span class="block font-bold text-2xl">Bargain to buy</span>
-                                        <p class="text-md leading-relaxed">Users have the option to bargain to buy a
+                                        <span class="block font-bold text-xl">Bargain to buy</span>
+                                        <p class="text-sm leading-relaxed">Users have the option to bargain to buy a
                                             clothing item. This allows users to save money from repeatedly renting
                                             and
                                             further strengthen sustainability.</p>
@@ -224,16 +225,16 @@
                     <!-- 2. What can ClosetCloud Solve? -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">02 ★ PROBLEM & SOLUTION
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">02 ★ PROBLEM & SOLUTION
                             </h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">What can ClosetCloud
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">What can ClosetCloud
                                 Solve?</h3>
                         </div>
 
                         <div class="space-y-8">
                             <div>
-                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Problem</h4>
-                                <p class="text-md leading-relaxed mb-4">ClosetCloud addresses the problem of
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Problem</h4>
+                                <p class="text-sm leading-relaxed mb-4">ClosetCloud addresses the problem of
                                     overconsumption in the fashion industry, as it causes significant harm to the
                                     environment.</p>
 
@@ -245,8 +246,8 @@
                                             <img src="closetcloud_images/waste_image.jpg" alt="Textile Waste"
                                                 class="w-full h-full object-cover">
                                         </div>
-                                        <span class="block font-bold text-2xl">Waste</span>
-                                        <p class="text-md leading-relaxed">92 million tonnes of textile waste is
+                                        <span class="block font-bold text-xl">Waste</span>
+                                        <p class="text-sm leading-relaxed">92 million tonnes of textile waste is
                                             generated per year worldwide with around 85% of textiles ending up in
                                             landfills or are burnt.</p>
                                     </div>
@@ -258,8 +259,8 @@
                                             <img src="closetcloud_images/fast_fashion.jpg" alt="Fast Fashion Culture"
                                                 class="w-full h-full object-cover">
                                         </div>
-                                        <span class="block font-bold text-2xl">Fast Fashion Culture</span>
-                                        <p class="text-md leading-relaxed">Trendy clothes and styles are produced
+                                        <span class="block font-bold text-xl">Fast Fashion Culture</span>
+                                        <p class="text-sm leading-relaxed">Trendy clothes and styles are produced
                                             quickly in a large volume and sold at a cheap price. This encourages
                                             consumers to purchase frequently and dispose.</p>
                                     </div>
@@ -267,24 +268,22 @@
                             </div>
 
                             <div>
-                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Our Solution
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Our Solution
                                 </h4>
-                                <p class="text-md leading-relaxed">A peer-to-peer clothing rental platform that connects
+                                <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that connects
                                     people who want to rent, lend, or share affordable outfits directly from one
                                     another’s closets.</p>
                             </div>
                         </div>
                     </section>
 
-
-
                     <!-- 3. Ideation Process -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">03 ★ IDEATION</h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Ideation Process</h3>
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">03 ★ IDEATION</h2>
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Ideation Process</h3>
                         </div>
-                        <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Identifying
+                        <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Identifying
                             Stakeholders</h4>
                         <img src="closetcloud_images/Stakeholders.png" alt="Stakeholder Map"
                             class="w-full h-auto mb-8 border border-rift-black">
@@ -297,19 +296,19 @@
                     <!-- 4. User-Based Evaluations -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">04 ★ RESEARCH</h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">User-Based Evaluations
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">04 ★ RESEARCH</h2>
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">User-Based Evaluations
                             </h3>
                         </div>
 
                         <div class="space-y-8 max-w-2xl">
                             <div>
-                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">Task Scenarios
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Task Scenarios
                                 </h4>
                                 <p class="text-sm leading-relaxed mb-2">Participants went through a guided interactive
                                     sequence through our Figma prototype.</p>
                                 <div class="pl-4 border-l-2 border-rift-grey">
-                                    <span class="block font-bold text-xs uppercase text-rift-red">Findings</span>
+                                    <span class="block font-bold text-[10px] uppercase text-rift-red">Findings</span>
                                     <ul class="list-disc pl-5 mt-2 text-sm space-y-1">
                                         <li>Participants couldn’t find the ‘order page’ → Move to profile page from
                                             settings</li>
@@ -319,7 +318,7 @@
                             </div>
 
                             <div>
-                                <h4 class="font-bold mb-4 text-3xl font-sans leading-tight text-rift-red">First Click
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">First Click
                                     Test & 5-Second Test</h4>
                                 <ul class="list-disc pl-5 text-sm space-y-1">
                                     <li>Highlighted navigational ambiguity</li>
@@ -332,8 +331,8 @@
                     <!-- 5. Design Process -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">05 ★ DESIGN</h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Design Process</h3>
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">05 ★ DESIGN</h2>
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Design Process</h3>
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-sm max-w-2xl">
                             <li>Initial Ideations</li>
@@ -344,8 +343,8 @@
                     <!-- 6. User Flow -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">06 ★ FLOW</h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">User Flow</h3>
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">06 ★ FLOW</h2>
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">User Flow</h3>
                         </div>
 
                         <!-- Diagram Placeholder -->
@@ -358,8 +357,8 @@
                     <!-- 7. Video -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-sm tracking-widest mb-4">07 ★ PREVIEW</h2>
-                            <h3 class="font-['Times_New_Roman'] text-3xl md:text-5xl uppercase">Video of ClosetCloud
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">07 ★ PREVIEW</h2>
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Video of ClosetCloud
                             </h3>
                         </div>
                         <div class="w-full aspect-video bg-black flex items-center justify-center">
@@ -379,7 +378,7 @@
                         </div>
                         <!-- Right: Quote -->
                         <div class="order-1 md:order-2 text-center">
-                            <h3 class="font-montreal text-lg md:text-xl leading-tight">
+                            <h3 class="font-montreal text-base md:text-lg leading-tight">
                                 “We hope ClosetCloud can create a safer, more enjoyable, <br>and encourage more
                                 sustainable habits in the clothing world.”
                             </h3>
@@ -401,6 +400,7 @@
         </main>
     </div>
 
+    <!-- Re-use script for cursor -->
     <script src="script.js"></script>
     <script>
         document.querySelector('section').style.opacity = '0';
