@@ -21,6 +21,7 @@
                         'sans': ['Archivo Black', 'sans-serif'],
                         'mono': ['JetBrains Mono', 'monospace'],
                         'montreal': ['PP Neue Montreal', 'sans-serif'],
+                        'vietnam': ['Be Vietnam Pro', 'sans-serif'],
                     },
                     cursor: {
                         'none': 'none',
@@ -31,7 +32,8 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@100&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -56,11 +58,11 @@
             class="md:w-1/5 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
                 <a href="index.html" class="block group">
-                    <h1 class="font-sans text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
-                        data-hover-text="BACK">SHUN<br>FUKUI</h1>
+                    <h1 class="font-vietnam font-thin text-3xl md:text-4xl leading-tight tracking-tighter mb-2 hover-trigger"
+                        data-hover-text="SHUN"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
                 </a>
                 <p class="font-mono text-rift-red text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
-                <nav class="hidden md:flex flex-col gap-2 text-lg font-sans font-bold">
+                <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="hover:text-rift-red hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-red hover-trigger">ABOUT</a>
                     <a href="contact.html" class="hover:text-rift-red hover-trigger">CONTACT</a>
@@ -71,7 +73,8 @@
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
                 <div class="pt-4 flex gap-4 text-xl items-center">
-                    <a href="#" class="hover:text-rift-blue transition-colors hover-trigger"><i
+                    <a href="https://www.instagram.com/sfujix/"
+                        class="hover:text-rift-blue transition-colors hover-trigger"><i
                             class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/shun-fukui-21229826a/"
                         class="hover:text-rift-blue transition-colors hover-trigger"><i
@@ -122,7 +125,8 @@
                     <!-- Title & Tagline -->
                     <div class="text-center md:text-left space-y-4">
                         <!-- Downsized H1 -->
-                        <h1 class="font-sans text-4xl md:text-7xl tracking-tighter uppercase leading-none">ClosetCloud
+                        <h1 class="font-sans text-4xl md:text-7xl tracking-tighter uppercase leading-none">
+                            ClosetCloud
                         </h1>
                         <p class="font-mono text-rift-red text-base tracking-widest">RENT IT, ROCK IT, RETURN IT!</p>
                         <!-- Downsized Intro -->
@@ -158,16 +162,116 @@
                 </div>
 
                 <div class="space-y-24 max-w-5xl mx-auto">
-                    <!-- 1. Key Features -->
+                    <!-- 1. What can ClosetCloud Solve? (Was 02) -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">01 ★ FEATURE</h2>
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">01 ★ PROBLEM & SOLUTION
+                            </h2>
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">What can ClosetCloud
+                                Solve?</h3>
+                        </div>
+
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Problem</h4>
+                                <p class="text-sm leading-relaxed mb-4">ClosetCloud addresses the problem of
+                                    overconsumption in the fashion industry, as it causes significant harm to the
+                                    environment.</p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                                    <!-- Waste Card -->
+                                    <div class="space-y-3">
+                                        <div
+                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center overflow-hidden">
+                                            <img src="closetcloud_images/waste_image.jpg" alt="Textile Waste"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <span class="block font-bold text-xl">Waste</span>
+                                        <p class="text-sm leading-relaxed">92 million tonnes of textile waste is
+                                            generated per year worldwide with around 85% of textiles ending up in
+                                            landfills or are burnt.</p>
+                                    </div>
+
+                                    <!-- Fast Fashion Card -->
+                                    <div class="space-y-3">
+                                        <div
+                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center overflow-hidden">
+                                            <img src="closetcloud_images/fast_fashion.jpg" alt="Fast Fashion Culture"
+                                                class="w-full h-full object-cover">
+                                        </div>
+                                        <span class="block font-bold text-xl">Fast Fashion Culture</span>
+                                        <p class="text-sm leading-relaxed">Trendy clothes and styles are produced
+                                            quickly in a large volume and sold at a cheap price. This encourages
+                                            consumers to purchase frequently and dispose.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Our Solution
+                                </h4>
+                                <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that connects
+                                    people who want to rent, lend, or share affordable outfits directly from one
+                                    another’s closets.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. Ideation Process (New Content) -->
+                    <section>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">02 ★ IDEATION</h2>
+                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Ideation Process</h3>
+                        </div>
+
+                        <div class="space-y-12">
+                            <!-- Subheading: Identifying Stakeholders -->
+                            <div>
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Identifying
+                                    Stakeholders</h4>
+                                <p class="text-sm leading-relaxed mb-6">
+                                    The diagram outlines the stakeholders involved in this problem domain, grouped into
+                                    two main categories: users and providers of clothing items.
+                                </p>
+                                <img src="closetcloud_images/Stakeholders.png" alt="Stakeholder Map"
+                                    class="w-full h-auto mb-4 border border-rift-black">
+                                <p class="text-sm font-bold mt-8 mb-4">We found 3 major themes that resulted from
+                                    opposing goals and priorities within stakeholders</p>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div class="bg-rift-beige border border-rift-black p-4 text-center">
+                                        <span class="font-bold text-rift-red text-sm">Sustainability</span>
+                                    </div>
+                                    <div class="bg-rift-beige border border-rift-black p-4 text-center">
+                                        <span class="font-bold text-rift-red text-sm">Revenue/Exposure</span>
+                                    </div>
+                                    <div class="bg-rift-beige border border-rift-black p-4 text-center">
+                                        <span class="font-bold text-rift-red text-sm">Balancing Cost and Use</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Subheading: Early Interviews & Findings -->
+                            <div>
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Early
+                                    Interviews & Findings</h4>
+                                <p class="text-sm leading-relaxed">
+                                    Based on our stakeholder diagram, we interviewed some stakeholders to gain insights
+                                    as part of our ideation process.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. Key Features (Was 01) -->
+                    <section>
+                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">03 ★ FEATURE</h2>
                             <!-- Downsized Section Header -->
                             <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Key Features</h3>
                         </div>
 
                         <div class="space-y-12">
-                            <div class="mt-24">
+                            <div class="mt-18">
                                 <!-- Downsized feature header -->
                                 <h4 class="font-bold mb-8 text-2xl font-sans leading-tight text-rift-red">Features</h4>
                                 <!-- 2x2 Grid -->
@@ -222,78 +326,9 @@
                         </div>
                     </section>
 
-                    <!-- 2. What can ClosetCloud Solve? -->
-                    <section>
-                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">02 ★ PROBLEM & SOLUTION
-                            </h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">What can ClosetCloud
-                                Solve?</h3>
-                        </div>
+                    <!-- Removed Duplicate Section 04 (Ideation Process) since it is now merged into 02 -->
 
-                        <div class="space-y-8">
-                            <div>
-                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Problem</h4>
-                                <p class="text-sm leading-relaxed mb-4">ClosetCloud addresses the problem of
-                                    overconsumption in the fashion industry, as it causes significant harm to the
-                                    environment.</p>
-
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                                    <!-- Waste Card -->
-                                    <div class="space-y-3">
-                                        <div
-                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center overflow-hidden">
-                                            <img src="closetcloud_images/waste_image.jpg" alt="Textile Waste"
-                                                class="w-full h-full object-cover">
-                                        </div>
-                                        <span class="block font-bold text-xl">Waste</span>
-                                        <p class="text-sm leading-relaxed">92 million tonnes of textile waste is
-                                            generated per year worldwide with around 85% of textiles ending up in
-                                            landfills or are burnt.</p>
-                                    </div>
-
-                                    <!-- Fast Fashion Card -->
-                                    <div class="space-y-3">
-                                        <div
-                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center overflow-hidden">
-                                            <img src="closetcloud_images/fast_fashion.jpg" alt="Fast Fashion Culture"
-                                                class="w-full h-full object-cover">
-                                        </div>
-                                        <span class="block font-bold text-xl">Fast Fashion Culture</span>
-                                        <p class="text-sm leading-relaxed">Trendy clothes and styles are produced
-                                            quickly in a large volume and sold at a cheap price. This encourages
-                                            consumers to purchase frequently and dispose.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Our Solution
-                                </h4>
-                                <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that connects
-                                    people who want to rent, lend, or share affordable outfits directly from one
-                                    another’s closets.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- 3. Ideation Process -->
-                    <section>
-                        <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">03 ★ IDEATION</h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Ideation Process</h3>
-                        </div>
-                        <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Identifying
-                            Stakeholders</h4>
-                        <img src="closetcloud_images/Stakeholders.png" alt="Stakeholder Map"
-                            class="w-full h-auto mb-8 border border-rift-black">
-
-                        <ul class="list-disc pl-5 mt-8 space-y-2 text-sm max-w-2xl">
-                            <li>Identifying Themes from Early Stakeholder Interviews</li>
-                        </ul>
-                    </section>
-
-                    <!-- 4. User-Based Evaluations -->
+                    <!-- 4. User-Based Evaluations (Was 05) -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">04 ★ RESEARCH</h2>
@@ -328,19 +363,26 @@
                         </div>
                     </section>
 
-                    <!-- 5. Design Process -->
+
+                    <!-- 5. Design Process (Was 06) -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">05 ★ DESIGN</h2>
                             <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Design Process</h3>
                         </div>
-                        <ul class="list-disc pl-5 space-y-2 text-sm max-w-2xl">
-                            <li>Initial Ideations</li>
-                            <li>Wireframes</li>
-                        </ul>
+                        <div class="space-y-8">
+                            <!-- Top Wireframe: Left Aligned -->
+                            <div class="w-full md:w-3/4 mr-auto border border-rift-black shadow-lg">
+                                <img src="closetcloud_images/Wireframe1.png" alt="Wireframe 1" class="w-full h-auto">
+                            </div>
+                            <!-- Bottom Wireframe: Right Aligned -->
+                            <div class="w-full md:w-3/4 ml-auto border border-rift-black shadow-lg">
+                                <img src="closetcloud_images/Wireframe2.png" alt="Wireframe 2" class="w-full h-auto">
+                            </div>
+                        </div>
                     </section>
 
-                    <!-- 6. User Flow -->
+                    <!-- 6. User Flow (Was 07) -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">06 ★ FLOW</h2>
@@ -354,7 +396,7 @@
                         </div>
                     </section>
 
-                    <!-- 7. Video -->
+                    <!-- 7. Video (Was 08) -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">07 ★ PREVIEW</h2>
@@ -369,7 +411,7 @@
                         </div>
                     </section>
 
-                    <!-- 8. Final Section -->
+                    <!-- Final Section -->
                     <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-12">
                         <!-- Left: Screenshot -->
                         <div class="order-2 md:order-1">
