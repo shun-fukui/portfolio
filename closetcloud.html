@@ -55,7 +55,7 @@
 
         <!-- Side Panel (Persistent Header) -->
         <aside
-            class="md:w-1/5 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
+            class="md:w-1/6 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
                 <a href="index.html" class="block group">
                     <h1 class="font-vietnam font-thin text-3xl md:text-4xl leading-tight tracking-tighter mb-2 hover-trigger"
@@ -85,10 +85,10 @@
         </aside>
 
         <!-- Main Scrollable Area -->
-        <main class="md:w-4/5 md:ml-auto flex flex-col min-h-screen">
+        <main class="md:w-5/6 md:ml-auto flex flex-col min-h-screen">
 
-            <!-- Header -->
-            <div
+            <!-- Header Removed -->
+            <!-- <div
                 class="bg-rift-white text-rift-red py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
                 <div class="flex items-center gap-4">
                     <a href="index.html"
@@ -105,7 +105,7 @@
                     <h2 class="font-sans text-xl tracking-widest">UX PROJECT</h2>
                 </div>
                 <span class="font-mono text-xs">UX DESIGN</span>
-            </div>
+            </div> -->
 
             <!-- Content -->
             <!-- Updated padding: px-6 md:px-20 lg:px-32 -->
@@ -167,11 +167,9 @@
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">01 ★ PROBLEM & SOLUTION
                             </h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">What can ClosetCloud
-                                Solve?</h3>
                         </div>
 
-                        <div class="space-y-8">
+                        <div class="space-y-20">
                             <div>
                                 <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Problem</h4>
                                 <p class="text-sm leading-relaxed mb-4">ClosetCloud addresses the problem of
@@ -208,11 +206,22 @@
                             </div>
 
                             <div>
-                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Our Solution
-                                </h4>
-                                <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that connects
-                                    people who want to rent, lend, or share affordable outfits directly from one
-                                    another’s closets.</p>
+                                <!-- Added mt-16 for extra spacing -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-16">
+                                    <div class="w-2/3 mx-auto order-last md:order-first">
+                                        <img src="closetcloud_images/closetCloud(2).png" alt="ClosetCloud Solution"
+                                            class="w-full h-auto border border-rift-black">
+                                    </div>
+                                    <div class="space-y-4">
+                                        <h4 class="font-bold text-2xl font-sans leading-tight text-rift-red">Our
+                                            Solution
+                                        </h4>
+                                        <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that
+                                            connects
+                                            people who want to rent, lend, or share affordable outfits directly from one
+                                            another’s closets.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -221,7 +230,6 @@
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">02 ★ IDEATION</h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Ideation Process</h3>
                         </div>
 
                         <div class="space-y-12">
@@ -235,7 +243,7 @@
                                 </p>
                                 <img src="closetcloud_images/Stakeholders.png" alt="Stakeholder Map"
                                     class="w-full h-auto mb-4 border border-rift-black">
-                                <p class="text-sm font-bold mt-8 mb-4">We found 3 major themes that resulted from
+                                <p class="text-sm leading-relaxed mb-6">We found 3 major themes that resulted from
                                     opposing goals and priorities within stakeholders</p>
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                     <div class="bg-rift-beige border border-rift-black p-4 text-center">
@@ -265,9 +273,7 @@
                     <!-- 3. Key Features (Was 01) -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
-                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">03 ★ FEATURE</h2>
-                            <!-- Downsized Section Header -->
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Key Features</h3>
+                            <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">03 ★ FEATURES</h2>
                         </div>
 
                         <div class="space-y-12">
@@ -326,29 +332,34 @@
                         </div>
                     </section>
 
-                    <!-- Removed Duplicate Section 04 (Ideation Process) since it is now merged into 02 -->
-
                     <!-- 4. User-Based Evaluations (Was 05) -->
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">04 ★ RESEARCH</h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">User-Based Evaluations
-                            </h3>
                         </div>
 
-                        <div class="space-y-8 max-w-2xl">
+                        <div class="space-y-8">
                             <div>
-                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Task Scenarios
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Task
+                                    Scenarios
                                 </h4>
-                                <p class="text-sm leading-relaxed mb-2">Participants went through a guided interactive
-                                    sequence through our Figma prototype.</p>
-                                <div class="pl-4 border-l-2 border-rift-grey">
-                                    <span class="block font-bold text-[10px] uppercase text-rift-red">Findings</span>
-                                    <ul class="list-disc pl-5 mt-2 text-sm space-y-1">
-                                        <li>Participants couldn’t find the ‘order page’ → Move to profile page from
-                                            settings</li>
-                                        <li>Novelty: “Many platforms provide this feature already”</li>
-                                    </ul>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                                    <div>
+                                        <p class="text-sm leading-relaxed">We conducted a usability test on 8
+                                            participants
+                                            using
+                                            4 different task scenarios, one for each of our main features. We gathered
+                                            qualitative data through open-ended questions and quantitative data through
+                                            a
+                                            system
+                                            usability scale with options ranging from strongly agree to strongly
+                                            disagree.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="closetcloud_images/taskScenarioDiagram.png"
+                                            alt="Task Scenarios Diagram" class="w-full h-auto">
+                                    </div>
                                 </div>
                             </div>
 
@@ -368,7 +379,6 @@
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">05 ★ DESIGN</h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Design Process</h3>
                         </div>
                         <div class="space-y-8">
                             <!-- Top Wireframe: Left Aligned -->
@@ -386,7 +396,6 @@
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">06 ★ FLOW</h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">User Flow</h3>
                         </div>
 
                         <!-- Diagram Placeholder -->
@@ -400,8 +409,6 @@
                     <section>
                         <div class="border-l-4 border-rift-red pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-red text-xs tracking-widest mb-4">07 ★ PREVIEW</h2>
-                            <h3 class="font-['Times_New_Roman'] text-2xl md:text-4xl uppercase">Video of ClosetCloud
-                            </h3>
                         </div>
                         <div class="w-full aspect-video bg-black flex items-center justify-center">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7emcm6YeGYQ"
@@ -434,7 +441,7 @@
                 <div class="max-w-4xl mx-auto space-y-8">
                     <h2 class="font-mono text-sm tracking-widest text-rift-red">NEXT PROJECT?</h2>
                     <a href="index.html"
-                        class="font-sans text-4xl md:text-6xl hover:text-rift-red transition-colors hover-trigger">VIEW
+                        class="font-vietnam text-4xl md:text-6xl hover:text-rift-red transition-colors hover-trigger">VIEW
                         ALL WORK</a>
                     <p class="font-mono text-xs text-rift-black mt-12">© 2026 SHUN FUKUI.</p>
                 </div>
