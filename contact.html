@@ -27,20 +27,29 @@
 <body
     class="bg-rift-white text-rift-black overflow-x-hidden cursor-none selection:bg-rift-blue selection:text-white flex flex-col min-h-screen font-montreal font-medium">
     <div id="cursor-dot"
-        class="fixed top-0 left-0 w-3 h-3 bg-rift-black rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
+        class="fixed top-0 left-0 w-3 h-3 bg-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-100">
     </div>
     <div id="cursor-ring"
-        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-black rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
+        class="fixed top-0 left-0 w-8 h-8 border-2 border-rift-blue rounded-full pointer-events-none z-[200] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out">
     </div>
 
     <div class="relative z-10 flex flex-col md:flex-row flex-grow min-h-screen">
         <aside
             class="md:w-1/6 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
-                <a href="index.html" class="block group">
-                    <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
-                        data-hover-text="BACK"><span class="tracking-[0.02em]">SHUN</span><br>FUKUI</h1>
-                </a>
+                <div class="flex flex-row justify-between items-start md:block">
+                    <a href="index.html" class="block group">
+                        <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
+                            data-hover-text="BACK"><span class="tracking-[0.02em]">SHUN</span><br>FUKUI</h1>
+                    </a>
+
+                    <!-- Mobile Nav (Visible only on mobile, right of logo) -->
+                    <nav class="flex md:hidden flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
+                        <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                        <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                        <a href="contact.html" class="text-rift-blue hover-trigger">CONTACT</a>
+                    </nav>
+                </div>
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
                 <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>

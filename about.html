@@ -37,10 +37,19 @@
         <aside
             class="md:w-1/6 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
-                <a href="index.html" class="block group">
-                    <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
-                        data-hover-text="BACK"><span class="tracking-[0.02em]">SHUN</span><br>FUKUI</h1>
-                </a>
+                <div class="flex flex-row justify-between items-start md:block">
+                    <a href="index.html" class="block group">
+                        <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
+                            data-hover-text="BACK"><span class="tracking-[0.02em]">SHUN</span><br>FUKUI</h1>
+                    </a>
+
+                    <!-- Mobile Nav (Visible only on mobile, right of logo) -->
+                    <nav class="flex md:hidden flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
+                        <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                        <a href="about.html" class="text-rift-blue hover-trigger">ABOUT</a>
+                        <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                    </nav>
+                </div>
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
                 <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
@@ -52,12 +61,14 @@
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
                 <div class="pt-4 flex gap-4 text-xl items-center">
-                    <a href="#" class="hover:text-rift-blue transition-colors hover-trigger"><i
+                    <a href="https://www.instagram.com/sfujix/"
+                        class="hover:text-rift-blue transition-colors hover-trigger"><i
                             class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/shun-fukui-21229826a/"
                         class="hover:text-rift-blue transition-colors hover-trigger"><i
                             class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" class="font-sans hover:text-rift-blue transition-colors hover-trigger">CV</a>
+                    <a href="https://drive.google.com/file/d/1qur4JghH_9_EHvP2Ip9yWWLlNLtaFowo/view?usp=sharing"
+                        class="font-sans hover:text-rift-blue transition-colors hover-trigger">CV</a>
                 </div>
             </div>
         </aside>

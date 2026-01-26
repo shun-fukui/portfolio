@@ -35,14 +35,23 @@
 
     <div class="relative z-10 flex flex-col md:flex-row flex-grow min-h-screen">
         <aside
-            class="md:w-1/5 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
+            class="md:w-1/6 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
-                <a href="index.html" class="block group">
-                    <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
-                        data-hover-text="BACK"><span class="tracking-[0.02em]">SHUN</span><br>FUKUI</h1>
-                </a>
+                <div class="flex flex-row justify-between items-start md:block">
+                    <a href="index.html" class="block group">
+                        <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
+                            data-hover-text="BACK"><span class="tracking-[0.02em]">SHUN</span><br>FUKUI</h1>
+                    </a>
+
+                    <!-- Mobile Nav (Visible only on mobile, right of logo) -->
+                    <nav class="flex md:hidden flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
+                        <a href="archive.html" class="text-rift-blue hover-trigger">ARCHIVE</a>
+                        <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                        <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                    </nav>
+                </div>
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
-                <nav class="hidden md:flex flex-col gap-2 text-lg font-sans font-bold">
+                <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="text-rift-blue hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
                     <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
@@ -52,41 +61,26 @@
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
                 <div class="pt-4 flex gap-4 text-xl items-center">
-                    <a href="#" class="hover:text-rift-blue transition-colors hover-trigger"><i
+                    <a href="https://www.instagram.com/sfujix/"
+                        class="hover:text-rift-blue transition-colors hover-trigger"><i
                             class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/shun-fukui-21229826a/"
                         class="hover:text-rift-blue transition-colors hover-trigger"><i
                             class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" class="font-sans hover:text-rift-blue transition-colors hover-trigger">CV</a>
+                    <a href="https://drive.google.com/file/d/1qur4JghH_9_EHvP2Ip9yWWLlNLtaFowo/view?usp=sharing"
+                        class="font-sans hover:text-rift-blue transition-colors hover-trigger">CV</a>
                 </div>
             </div>
         </aside>
 
         <main class="md:w-5/6 md:ml-auto flex flex-col min-h-screen">
-            <div
-                class="bg-rift-white text-rift-blue py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
-                <div class="flex items-center gap-4">
-                    <a href="index.html"
-                        class="group relative w-10 h-10 border border-current rounded-full flex items-center justify-center overflow-hidden hover-trigger">
-                        <span
-                            class="absolute transform group-hover:-translate-x-full transition-transform duration-300">
-                            <i class="fa-solid fa-chevron-left text-sm"></i>
-                        </span>
-                        <span
-                            class="absolute transform translate-x-full group-hover:translate-x-0 transition-transform duration-300">
-                            <i class="fa-solid fa-chevron-left text-sm"></i>
-                        </span>
-                    </a>
-                    <h2 class="font-sans text-xl tracking-widest">ARCHIVE</h2>
-                </div>
-                <span class="font-mono text-xs">2020 - 2026</span>
-            </div>
+
             <section class="flex-grow p-4 md:p-12 animate-fade-in">
                 <h1 class="font-sans text-6xl md:text-8xl mb-12">ALL WORKS</h1>
 
                 <div class="font-mono text-lg space-y-4">
                     <!-- Archive Item 1: Forms of Space -->
-                    <div class="border-b border-rift-grey">
+                    <div class="border-b border-rift-black">
                         <button onclick="toggleArchive(this)"
                             class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
                             <span class="group-hover:pl-4 transition-all duration-300">Forms of Space</span>
@@ -111,7 +105,7 @@
                     </div>
 
                     <!-- Archive Item 2: LEC Booklet -->
-                    <div class="border-b border-rift-grey">
+                    <div class="border-b border-rift-black">
                         <button onclick="toggleArchive(this)"
                             class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
                             <span class="group-hover:pl-4 transition-all duration-300">LEC Recruitment Booklet</span>
@@ -136,7 +130,7 @@
                     </div>
 
                     <!-- Archive Item 3: MAS Solutions -->
-                    <div class="border-b border-rift-grey">
+                    <div class="border-b border-rift-black">
                         <button onclick="toggleArchive(this)"
                             class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
                             <span class="group-hover:pl-4 transition-all duration-300">MAS Solutions</span>
@@ -164,7 +158,7 @@
                     </div>
 
                     <!-- Archive Item 4: LEC Instagram -->
-                    <div class="border-b border-rift-grey">
+                    <div class="border-b border-rift-black">
                         <button onclick="toggleArchive(this)"
                             class="w-full flex justify-between py-4 text-left hover:text-rift-blue transition-colors group">
                             <span class="group-hover:pl-4 transition-all duration-300">LEC Instagram</span>

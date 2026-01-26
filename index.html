@@ -51,26 +51,31 @@
 
     <!-- Intro Loader -->
     <div id="loader" class="fixed inset-0 z-[100] bg-rift-white flex flex-col justify-center items-center text-center">
-        <div class="flex items-center gap-8 md:gap-24">
-            <!-- Left Images -->
-            <img src="main_images/portfolio_main_omake1.png" id="loader-img-1"
-                class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
-            <img src="main_images/portfolio_main_omake4.png" id="loader-img-2"
-                class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
+        <div class="flex flex-col items-center gap-8 md:gap-12">
+            <!-- Top Images -->
+            <div class="flex gap-4 md:gap-24">
+                <img src="main_images/portfolio_main_omake1.png" id="loader-img-1"
+                    class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
+                <img src="main_images/portfolio_main_omake4.png" id="loader-img-2"
+                    class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
+            </div>
 
             <!-- Logo -->
-            <div>
+            <div class="py-4">
                 <h2 class="font-mono text-rift-blue text-sm md:text-xl tracking-widest mb-4">CREATIVE ★ DESIGNER</h2>
-                <h1 class="font-vietnam font-thin text-[8vw] leading-[0.85] tracking-tighter text-rift-black">
+                <h1
+                    class="font-vietnam font-thin text-[10vw] md:text-[8vw] leading-[0.85] tracking-tighter text-rift-black">
                     <span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI
                 </h1>
             </div>
 
-            <!-- Right Images -->
-            <img src="main_images/portfolio_main_omake3.png" id="loader-img-3"
-                class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
-            <img src="main_images/portfolio_main_omake2.png" id="loader-img-4"
-                class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
+            <!-- Bottom Images -->
+            <div class="flex gap-4 md:gap-24">
+                <img src="main_images/portfolio_main_omake3.png" id="loader-img-3"
+                    class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
+                <img src="main_images/portfolio_main_omake2.png" id="loader-img-4"
+                    class="w-10 sm:w-16 md:w-24 transform scale-0 opacity-0 transition-all duration-500 ease-out">
+            </div>
         </div>
     </div>
 
@@ -81,9 +86,23 @@
         <aside
             class="md:w-1/6 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
-                <h1 class="font-vietnam font-thin text-3xl md:text-4xl leading-tight tracking-tighter mb-2 hover-trigger"
-                    data-hover-text="SHUN"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
+                <div class="flex flex-row justify-between items-start md:block">
+                    <a href="index.html" class="block group">
+                        <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
+                            data-hover-text="SHUN"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
+                    </a>
+
+                    <!-- Mobile Nav (Visible only on mobile, right of logo) -->
+                    <nav class="flex md:hidden flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
+                        <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                        <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                        <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                    </nav>
+                </div>
+
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
+
+                <!-- Desktop Nav -->
                 <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
@@ -197,6 +216,8 @@
                         <a href="https://www.linkedin.com/in/shun-fukui-21229826a/"
                             class="hover:text-rift-blue transition-colors hover-trigger"><i
                                 class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://drive.google.com/file/d/1qur4JghH_9_EHvP2Ip9yWWLlNLtaFowo/view?usp=sharing"
+                            class="font-sans text-lg hover:text-rift-blue transition-colors hover-trigger">CV</a>
                     </div>
                     <p class="font-mono text-xs text-rift-black mt-12">© 2026 SHUN FUKUI.</p>
                 </div>
