@@ -87,26 +87,6 @@
         <!-- Main Scrollable Area -->
         <main class="md:w-5/6 md:ml-auto flex flex-col min-h-screen">
 
-            <!-- Header Removed -->
-            <!-- <div
-                class="bg-rift-white text-rift-blue py-4 px-12 border-b border-rift-black z-20 flex justify-between items-center sticky top-0">
-                <div class="flex items-center gap-4">
-                    <a href="index.html"
-                        class="group relative w-10 h-10 border border-current rounded-full flex items-center justify-center overflow-hidden hover-trigger">
-                        <span
-                            class="absolute transform group-hover:-translate-x-full transition-transform duration-300">
-                            <i class="fa-solid fa-chevron-left text-sm"></i>
-                        </span>
-                        <span
-                            class="absolute transform translate-x-full group-hover:translate-x-0 transition-transform duration-300">
-                            <i class="fa-solid fa-chevron-left text-sm"></i>
-                        </span>
-                    </a>
-                    <h2 class="font-sans text-xl tracking-widest">PROJECT: REVERIE</h2>
-                </div>
-                <span class="font-mono text-xs">UX/UI HACKATHON</span>
-            </div> -->
-
             <!-- Content -->
             <!-- Updated padding to px-6 md:px-20 lg:px-32 for breathing room -->
             <section class="flex-grow px-6 py-12 md:px-20 lg:px-32 animate-fade-in font-montreal">
@@ -162,10 +142,10 @@
                         <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-blue text-xs tracking-widest mb-4">01 ★ DISCOVERY</h2>
                             <!-- Downsized Section H3 -->
-                            <h3 class="font-sans text-2xl md:text-4xl uppercase">The Challenge & Discovery</h3>
+                            <!-- <h3 class="font-sans text-2xl md:text-4xl uppercase">The Challenge & Discovery</h3> -->
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
                             <div class="space-y-6">
                                 <div>
                                     <!-- Downsized H4 -->
@@ -184,17 +164,16 @@
                                     <p class="text-sm leading-relaxed">The accumulation of fatigue from bad sleep is the
                                         core issue that prevents a healthy morning routine.</p>
                                 </div>
-                                <div class="bg-rift-blue/5 p-6 border-l-2 border-rift-blue">
+                                <!-- <div class="bg-rift-blue/5 p-6 border-l-2 border-rift-blue">
                                     <h4 class="font-bold text-base mb-2 text-rift-blue">Key Insight</h4>
                                     <p class="text-sm italic leading-relaxed">"On days with a good quality of sleep,
                                         people feel better in the morning. This naturally leads to breakfast to have a
                                         good start to the day."</p>
-                                </div>
+                                </div> -->
                             </div>
-                            <div
-                                class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden">
-                                <img src="reverie_images/reverie(2).png" alt="Challenge Analysis"
-                                    class="absolute inset-0 w-full h-full object-cover">
+                            <div class="flex items-center justify-center relative">
+                                <img src="reverie_images/reverieDiscussion.png" alt="Challenge Analysis"
+                                    class="w-full h-full object-cover">
                             </div>
                         </div>
                     </section>
@@ -203,86 +182,21 @@
                     <section class="py-12">
                         <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-blue text-xs tracking-widest mb-4">02 ★ RESEARCH</h2>
-                            <h3 class="font-sans text-2xl md:text-4xl uppercase">Research & Data</h3>
+                            <!-- <h3 class="font-sans text-2xl md:text-4xl uppercase">Research & Data</h3> -->
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-                            <!-- Left: Breakfast Stats (Pie Chart) -->
-                            <div
-                                class="bg-rift-white border border-rift-black p-8 rounded-[2rem] shadow-lg text-center h-full flex flex-col justify-between">
-                                <h4 class="font-bold text-lg md:text-xl text-rift-blue mb-8">University Students'
-                                    Breakfast</h4>
-                                <div class="w-full aspect-square max-w-sm mx-auto mb-8 relative">
-                                    <img src="reverie_images/reverie(3).png" alt="Breakfast Data Pie Chart"
-                                        class="w-full h-full object-contain">
-                                </div>
-                                <p class="text-base font-bold leading-relaxed">
-                                    <span class="text-rift-blue text-3xl block mb-2 font-sans">58%</span>
-                                    mentioned <span class="bg-rift-blue text-rift-white px-2">sleep</span> as a reason
-                                    to why they won't eat breakfast.
-                                </p>
+                            <div>
+                                <img src="reverie_images/ReveriePieChart.png" alt="Breakfast Data Pie Chart"
+                                    class="w-full h-auto">
                             </div>
 
-                            <!-- Right: Why Sleep Matters (Tree Diagram) -->
-                            <div
-                                class="bg-rift-white p-8 rounded-[2rem] border border-rift-black h-full flex flex-col items-center justify-center text-center shadow-lg">
-                                <h4 class="font-bold text-xl text-rift-blue mb-4">Why Sleep Matters</h4>
-
-                                <!-- Tree Structure -->
-                                <div class="flex flex-col items-center w-full">
-                                    <!-- Vertical Line -->
-                                    <div class="h-8 w-px bg-rift-black"></div>
-                                    <!-- Horizontal Branch -->
-                                    <div class="h-px bg-rift-black w-4/5 relative">
-                                        <!-- Drop Lines -->
-                                        <div class="absolute left-0 top-0 h-4 w-px bg-rift-black"></div>
-                                        <div class="absolute left-1/2 top-0 h-4 w-px bg-rift-black -translate-x-1/2">
-                                        </div>
-                                        <div class="absolute right-0 top-0 h-4 w-px bg-rift-black"></div>
-                                    </div>
-
-                                    <!-- 3 Items Grid -->
-                                    <div class="grid grid-cols-3 gap-2 w-full mt-4 mb-8">
-                                        <div class="flex flex-col items-center">
-                                            <i class="fa-solid fa-caret-down text-rift-blue mb-2"></i>
-                                            <p class="text-[10px] md:text-xs font-bold leading-tight">Loss
-                                                of<br>appetite
-                                                and<br>metabolism</p>
-                                        </div>
-                                        <div class="flex flex-col items-center">
-                                            <i class="fa-solid fa-caret-down text-rift-blue mb-2"></i>
-                                            <p class="text-[10px] md:text-xs font-bold leading-tight">Low
-                                                focus<br>and<br>Performance</p>
-                                        </div>
-                                        <div class="flex flex-col items-center">
-                                            <i class="fa-solid fa-caret-down text-rift-blue mb-2"></i>
-                                            <p class="text-[10px] md:text-xs font-bold leading-tight">Affects
-                                                mood<br>and<br>quality of life</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Arrow Down -->
-                                    <i class="fa-solid fa-arrow-down text-lg text-rift-black mb-4"></i>
-
-                                    <!-- Solution Box 1 -->
-                                    <div
-                                        class="bg-blue-100 px-6 py-3 rounded-full border border-rift-black mb-4 w-full max-w-xs">
-                                        <span class="font-bold text-xs">Preventing Sleep Deprivation</span>
-                                    </div>
-
-                                    <!-- Arrow Down -->
-                                    <i class="fa-solid fa-arrow-down text-lg text-rift-black mb-4"></i>
-
-                                    <!-- Solution Box 2 -->
-                                    <div
-                                        class="bg-blue-100 px-6 py-3 rounded-lg border border-rift-black w-full max-w-xs">
-                                        <p class="font-bold text-xs"><span class="text-lg block">7-9 hours</span> of
-                                            uninterrupted<br>sleep is recommended</p>
-                                    </div>
-
-                                </div>
+                            <div>
+                                <img src="reverie_images/ReverieWhySleep.png" alt="Why Sleep Matters"
+                                    class="w-full h-auto">
                             </div>
+
 
                         </div>
                     </section>
@@ -293,9 +207,6 @@
                             <h2 class="font-mono text-rift-blue text-xs tracking-widest mb-4">03 ★ SOLUTION</h2>
                             <h3 class="font-sans text-2xl md:text-4xl uppercase">The Solution</h3>
                         </div>
-
-                        <p class="text-xl font-bold text-center mb-16">"Your sleep has to be perfect. In your own way!"
-                        </p>
 
                         <div class="space-y-24">
                             <!-- Feature 1 -->
@@ -313,7 +224,7 @@
                                     </ul>
                                 </div>
                                 <div
-                                    class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden">
+                                    class="aspect-square bg-rift-grey flex items-center justify-center relative overflow-hidden">
                                     <img src="reverie_images/reverie(4).png" alt="Active Awakening UI"
                                         class="absolute inset-0 w-full h-full object-cover">
                                 </div>
@@ -322,7 +233,7 @@
                             <!-- Feature 2 -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div
-                                    class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden order-2 md:order-1">
+                                    class="aspect-square bg-rift-grey flex items-center justify-center relative overflow-hidden order-2 md:order-1">
                                     <img src="reverie_images/reverie(5).png" alt="Routine Quality UI"
                                         class="absolute inset-0 w-full h-full object-cover">
                                 </div>
@@ -355,7 +266,7 @@
                                     </ul>
                                 </div>
                                 <div
-                                    class="aspect-square bg-rift-grey border border-rift-black flex items-center justify-center relative overflow-hidden">
+                                    class="aspect-square bg-rift-grey flex items-center justify-center relative overflow-hidden">
                                     <img src="reverie_images/reverie(6).png" alt="Offloading Anxiety UI"
                                         class="absolute inset-0 w-full h-full object-cover">
                                 </div>
@@ -397,13 +308,11 @@
 
                             <!-- Right: Images -->
                             <div class="flex flex-col gap-8">
-                                <div
-                                    class="aspect-video bg-rift-grey border border-rift-black overflow-hidden relative">
+                                <div class="aspect-video bg-rift-grey overflow-hidden relative">
                                     <img src="reverie_images/reverie_productthon.png" alt="Productathon Event"
                                         class="absolute inset-0 w-full h-full object-cover">
                                 </div>
-                                <div
-                                    class="aspect-video bg-rift-grey border border-rift-black overflow-hidden relative">
+                                <div class="aspect-video bg-rift-grey overflow-hidden relative">
                                     <img src="reverie_images/reverie_keylearning.png" alt="Key Learnings Slide"
                                         class="absolute inset-0 w-full h-full object-cover">
                                 </div>
