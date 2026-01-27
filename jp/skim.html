@@ -20,6 +20,7 @@
                         'sans': ['Archivo Black', 'sans-serif'],
                         'mono': ['JetBrains Mono', 'monospace'],
                         'montreal': ['PP Neue Montreal', 'sans-serif'],
+                        'noto': ['Noto Sans JP', 'sans-serif'],
                         'vietnam': ['Be Vietnam Pro', 'sans-serif'],
                     },
                     cursor: {
@@ -32,10 +33,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@100&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body
@@ -67,7 +71,7 @@
                         <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
                         <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
                         <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                        <a href="jp/skim.html" class="hover:text-rift-blue hover-trigger">JP</a>
+                        <a href="../skim.html" class="hover:text-rift-blue hover-trigger">EN</a>
                     </nav>
                 </div>
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
@@ -75,7 +79,7 @@
                     <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
                     <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                    <a href="jp/skim.html" class="hover:text-rift-blue hover-trigger">JP</a>
+                    <a href="../skim.html" class="hover:text-rift-blue hover-trigger">EN</a>
                 </nav>
             </div>
 
@@ -108,7 +112,7 @@
 
                     <!-- Hero Image -->
                     <div class="w-full aspect-video bg-rift-grey border border-rift-black overflow-hidden relative">
-                        <img src="main_images/skimbanner.png" alt="SKIM Hero" class="w-full h-full object-cover">
+                        <img src="../main_images/skimbanner.png" alt="SKIM Hero" class="w-full h-full object-cover">
                     </div>
 
                     <!-- Title & Tagline -->
@@ -117,11 +121,10 @@
                         <h1 class="font-sans text-4xl md:text-7xl tracking-tighter uppercase leading-none">Find Me -
                             SKIM
                         </h1>
-                        <p class="font-mono text-rift-blue text-base tracking-widest">PRACTICALITY × ORIGINALITY</p>
+                        <p class="font-mono text-rift-blue text-base tracking-widest">現実性 × 独自性</p>
                         <!-- Downsized Intro P -->
-                        <p class="text-lg md:text-xl leading-relaxed max-w-3xl mt-8">
-                            Designed an album cover and branding for an amateur artist named SKIM. The project focused
-                            on balancing cost and uniqueness for an artist just starting out.
+                        <p class="text-lg md:text-xl leading-relaxed max-w-4xl mt-8">
+                            SKIMというアーティストのブランディングをデザインや映像制作を通して行いました。
                         </p>
                     </div>
 
@@ -129,16 +132,16 @@
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-rift-black py-8">
                         <div>
                             <span class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">TYPE</span>
-                            <span class="font-bold text-sm">Graphic Design, Branding</span>
+                            <span class="font-bold text-sm">グラフィック, ブランディング</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">ROLE</span>
-                            <span class="font-bold text-sm">Designer (Solo Project)</span>
+                            <span class="font-bold text-sm">デザイナー (ソロプロジェクト)</span>
                         </div>
                         <div>
                             <span
                                 class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">DURATION</span>
-                            <span class="font-bold text-sm">6 Weeks</span>
+                            <span class="font-bold text-sm">6週間</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">TOOLS</span>
@@ -155,20 +158,20 @@
                         <!-- Text Content Grid -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-16">
                             <div>
-                                <h4 class="font-bold text-2xl mb-2 text-rift-blue">Context</h4>
-                                <p class="text-sm leading-relaxed">The client is an amateur artist with limited
-                                    resources. We needed a high-impact solution that didn't break the bank.</p>
+                                <h4 class="font-bold text-2xl mb-2 text-rift-blue">概要</h4>
+                                <p class="text-sm leading-relaxed">
+                                    クライアントは限られた資金しか持たないアマチュアアーティストなため、予算を大幅に超えない、インパクトのある解決策が必要でした。</p>
                             </div>
                             <div>
-                                <h4 class="font-bold text-2xl mb-2 text-rift-blue">Core Strategy</h4>
-                                <p class="text-sm leading-relaxed">Develop a marketing strategy using low-cost
-                                    promotional mediums while maintaining a unique identity.</p>
+                                <h4 class="font-bold text-2xl mb-2 text-rift-blue">戦略</h4>
+                                <p class="text-sm leading-relaxed">
+                                    低コストのプロモーションメディアを使用しながら、独自のアイデンティティを維持するマーケティング戦略を開発しました。</p>
                             </div>
                         </div>
 
                         <!-- Strategy Image -->
                         <div class="w-full flex justify-center">
-                            <img src="skim_images/skimStrategy.png" alt="SKIM Strategy Diagram"
+                            <img src="../skim_images/skimStrategy.png" alt="SKIM Strategy Diagram"
                                 class="max-w-full h-auto">
                         </div>
                     </section>
@@ -182,9 +185,8 @@
                         <div class="space-y-16">
                             <!-- 1. Concept Text -->
                             <div>
-                                <h4 class="text-rift-blue font-bold text-2xl mb-2">Concept</h4>
-                                <p class="text-base text-sm leading-relaxed">A journey to "find myself", looking back on
-                                    memories from the past.</p>
+                                <h4 class="text-rift-blue font-bold text-2xl mb-2">動画のコンセプト</h4>
+                                <p class="text-base text-sm leading-relaxed">過去の思い出を振り返りながら、自分を見つける旅。</p>
                             </div>
 
                             <!-- 2. YouTube Embed -->
@@ -198,17 +200,16 @@
 
                             <!-- 3. Visual Technique -->
                             <div>
-                                <h4 class="text-rift-blue font-bold text-2xl mb-2">Visual Technique</h4>
-                                <p class="text-base text-sm leading-relaxed">Utilized ratio changes between <strong
-                                        class="text-rift-blue px-1">16:9 (present)</strong> and
-                                    <strong class="text-rift-blue px-1">4:3 (past)</strong> to
-                                    visually contrast timelines.
-                                </p>
+                                <h4 class="text-rift-blue font-bold text-2xl mb-2">表現</h4>
+                                <p class="text-base text-sm leading-relaxed">現在の<strong
+                                        class="text-rift-blue px-1">16:9</strong>と過去の<strong
+                                        class="text-rift-blue px-1">4:3</strong>の比率を変更して、思い出を振り返ってることを視覚的に比較する。</p>
                             </div>
 
                             <!-- 4. Full Width Image -->
                             <div class="-mx-6 md:-mx-20 lg:-mx-32">
-                                <img src="skim_images/skimScroll.png" alt="Music Video Timeline" class="w-full h-auto">
+                                <img src="../skim_images/skimScroll.png" alt="Music Video Timeline"
+                                    class="w-full h-auto">
                             </div>
                         </div>
                     </section>
@@ -224,13 +225,13 @@
                             <!-- Album Cover Section -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div>
-                                    <h4 class="font-bold text-lg mb-2 text-rift-blue">Album Cover Design</h4>
-                                    <p class="text-base text-sm leading-relaxed">The song title "FIND ME" is designed to
-                                        emerge from both the front and back of the camera lens to avoid revealing the
-                                        subject's location.</p>
+                                    <h4 class="font-bold text-lg mb-2 text-rift-blue">アルバムカバーデザイン</h4>
+                                    <p class="text-base text-sm leading-relaxed">曲名「FIND
+                                        ME」は、カメラレンズの前後から現れるようにデザインして、被写体の位置を示さないようにしました。「私を見つけて」という曲名なので、居場所がわかってしまうといけないと思いました。
+                                    </p>
                                 </div>
                                 <div class="w-full">
-                                    <img src="skim_images/albumCover.png" alt="Album Cover Design"
+                                    <img src="../skim_images/albumCover.png" alt="Album Cover Design"
                                         class="w-full h-auto">
                                 </div>
                             </div>
@@ -238,16 +239,14 @@
                             <!-- Logo Design Section -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div>
-                                    <h4 class="font-bold text-lg mb-2 text-rift-blue">Logo Design</h4>
+                                    <h4 class="font-bold text-lg mb-2 text-rift-blue">ロゴデザイン</h4>
                                     <ul class="space-y-4 text-sm leading-relaxed">
-                                        <li><strong>Interpretation:</strong> Represents SKIM's songs as a journey of
-                                            searching for oneself through life experiences.</li>
-                                        <li><strong>Message:</strong> During live performances, the fans' eyes should be
-                                            focused solely on SKIM.</li>
+                                        <li><strong>表現:</strong> SKIMの曲を、彼の人生経験を通じて自身を見つける旅として表現します。</li>
+                                        <li><strong>メッセージ:</strong>ライブパフォーマンス中にファンの「目」はアーティストだけに集中してほしいという意味を込めました。</li>
                                     </ul>
                                 </div>
                                 <div class="w-full">
-                                    <img src="skim_images/logo1.jpg" alt="Logo Design" class="w-full h-auto">
+                                    <img src="../skim_images/logo1.jpg" alt="Logo Design" class="w-full h-auto">
                                 </div>
                             </div>
                         </div>
@@ -269,14 +268,14 @@
                                         exclusive to live events adds a sense of exclusivity to attract fans.</p>
                                 </div>
                                 <div class="w-full bg-rift-grey relative">
-                                    <img src="skim_images/vinylFront.jpg" class="w-full h-full object-cover">
+                                    <img src="../skim_images/vinylFront.jpg" class="w-full h-full object-cover">
                                 </div>
                             </div>
 
                             <!-- Item 02: Picks -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div class="w-full bg-rift-grey relative">
-                                    <img src="skim_images/guitarpickjpg.jpg" class="w-full h-full object-cover">
+                                    <img src="../skim_images/guitarpickjpg.jpg" class="w-full h-full object-cover">
                                 </div>
                                 <div>
                                     <span class="font-mono text-rift-blue text-[10px] mb-2 block">ITEM 02</span>
@@ -311,7 +310,7 @@
     </div>
 
     <!-- Re-use script for cursor -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     <script>
         document.querySelector('section').style.opacity = '0';
         setTimeout(() => {

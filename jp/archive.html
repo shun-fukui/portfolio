@@ -11,17 +11,17 @@
             theme: {
                 extend: {
                     colors: { 'rift-white': '#FFFFFF', 'rift-black': '#111111', 'rift-blue': '#002080', 'rift-grey': '#E5E5E5' },
-                    fontFamily: { 'sans': ['Archivo Black', 'sans-serif'], 'mono': ['JetBrains Mono', 'monospace'], 'montreal': ['PP Neue Montreal', 'sans-serif'], 'vietnam': ['Be Vietnam Pro', 'sans-serif'] },
+                    fontFamily: { 'sans': ['Archivo Black', 'sans-serif'], 'mono': ['JetBrains Mono', 'monospace'], 'montreal': ['PP Neue Montreal', 'sans-serif'], 'vietnam': ['Noto Sans JP', 'sans-serif'] },
                     cursor: { 'none': 'none' }
                 }
             }
         }
     </script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@100&family=JetBrains+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body
@@ -48,6 +48,7 @@
                         <a href="archive.html" class="text-rift-blue hover-trigger">ARCHIVE</a>
                         <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
                         <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                        <a href="../archive.html" class="hover:text-rift-blue hover-trigger">EN</a>
                     </nav>
                 </div>
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
@@ -55,7 +56,7 @@
                     <a href="archive.html" class="text-rift-blue hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
                     <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                    <a href="jp/archive.html" class="hover:text-rift-blue hover-trigger">JP</a>
+                    <a href="../archive.html" class="hover:text-rift-blue hover-trigger">EN</a>
                 </nav>
             </div>
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
@@ -117,8 +118,8 @@
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
                                 <!-- Changed from grid grid-cols-2 to flex flex-col to stack images -->
                                 <div class="md:col-span-2 flex flex-col gap-4">
-                                    <img src="archive_images/lec_booklet(1).png" class="w-full h-auto">
-                                    <img src="archive_images/lec_booklet(2).png" class="w-full h-auto">
+                                    <img src="../archive_images/lec_booklet(1).png" class="w-full h-auto">
+                                    <img src="../archive_images/lec_booklet(2).png" class="w-full h-auto">
                                 </div>
                                 <div class="md:col-span-1 flex flex-col justify-center">
                                     <p class="text-sm leading-relaxed max-w-sm">
@@ -142,7 +143,7 @@
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
                                 <div class="md:col-span-2 grid grid-cols-2 gap-4">
                                     <div class="aspect-video bg-rift-grey relative overflow-hidden group">
-                                        <img src="archive_images/Joan BC 1.jpg" class="w-full h-full object-cover">
+                                        <img src="../archive_images/Joan BC 1.jpg" class="w-full h-full object-cover">
                                     </div>
                                     <div class="aspect-video bg-rift-grey relative overflow-hidden group">
                                         <!-- Empty Placeholder -->
@@ -170,11 +171,11 @@
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
                                 <div class="md:col-span-2 grid grid-cols-2 gap-4 items-start">
                                     <div class="aspect-square bg-rift-grey relative overflow-hidden group">
-                                        <img src="archive_images/lec_post(1).jpg" class="w-full h-full object-cover">
+                                        <img src="../archive_images/lec_post(1).jpg" class="w-full h-full object-cover">
                                     </div>
                                     <div class="relative group">
                                         <!-- Changed second image to natural height to avoid cropping -->
-                                        <img src="archive_images/lec_post(2).png" class="w-full h-auto">
+                                        <img src="../archive_images/lec_post(2).png" class="w-full h-auto">
                                     </div>
                                 </div>
                                 <div class="md:col-span-1 flex flex-col justify-center">
@@ -191,7 +192,7 @@
             </section>
         </main>
     </div>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     <script>
         function toggleArchive(button) {
             const content = button.nextElementSibling;
