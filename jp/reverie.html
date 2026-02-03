@@ -20,7 +20,8 @@
                         'sans': ['Archivo Black', 'sans-serif'],
                         'mono': ['JetBrains Mono', 'monospace'],
                         'montreal': ['PP Neue Montreal', 'sans-serif'],
-                        'vietnam': ['Noto Sans JP', 'sans-serif'],
+                        'vietnam': ['Be Vietnam Pro', 'sans-serif'],
+                        'notosans': ['Noto Sans JP', 'sans-serif'],
                     },
                     cursor: {
                         'none': 'none',
@@ -33,6 +34,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@100&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
@@ -62,24 +66,37 @@
                             data-hover-text="BACK"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
                     </a>
 
-                    <!-- Mobile Nav (Visible only on mobile, right of logo) -->
-                    <nav class="flex md:hidden flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
-                        <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
-                        <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
-                        <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                        <a href="../reverie.html" class="hover:text-rift-blue hover-trigger">EN</a>
-                    </nav>
+                    <div class="flex flex-col items-end md:hidden">
+                        <nav class="flex flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
+                            <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                            <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                            <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                        </nav>
+                        <!-- Mobile Language Toggle -->
+                        <div class="font-vietnam text-sm mt-4">
+                            <a href="../index.html" class="text-rift-black hover:text-rift-blue hover-trigger">EN</a>
+                            <span class="text-rift-black font-normal">/</span> <span
+                                class="font-bold text-rift-blue cursor-default">JP</span>
+                        </div>
+                    </div>
                 </div>
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
                 <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
                     <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                    <a href="../reverie.html" class="hover:text-rift-blue hover-trigger">EN</a>
                 </nav>
             </div>
 
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
+                <!-- Desktop Language Toggle -->
+                <div class="font-vietnam text-xl mb-6">
+                    <a href="../index.html"
+                        class="text-rift-black hover:text-rift-blue hover-trigger transition-colors">EN</a> <span
+                        class="text-rift-black font-normal">/</span> <span
+                        class="font-bold text-rift-blue cursor-default">JP</span>
+                </div>
+
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
                 <div class="pt-4 flex gap-4 text-xl items-center">
@@ -118,8 +135,7 @@
                         <p class="font-mono text-rift-blue text-base tracking-widest">REST, ROUTINES, RESULTS</p>
                         <!-- Downsized Intro P -->
                         <p class="text-lg md:text-xl leading-relaxed max-w-3xl mt-8">
-                            Developed an innovative design solution to enhance well-being and help people lead more
-                            balanced lives during a UI/UX Hackathon.
+                            3日間のUI/UXハッカソンで健康推進を目的としたデザインソリューションを創出しました。
                         </p>
                     </div>
 
@@ -127,20 +143,20 @@
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-rift-black py-8">
                         <div>
                             <span class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">TYPE</span>
-                            <span class="font-bold text-sm">UI/UX Hackathon</span>
+                            <span class="font-bold text-sm">UI/UXハッカソン</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">ROLE</span>
-                            <span class="font-bold text-sm">Product Designer</span>
+                            <span class="font-bold text-sm">プロダクトデザイナー</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">TEAM</span>
-                            <span class="font-bold text-sm">4 People</span>
+                            <span class="font-bold text-sm">4人</span>
                         </div>
                         <div>
                             <span
                                 class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">DURATION</span>
-                            <span class="font-bold text-sm">3 Days</span>
+                            <span class="font-bold text-sm">3日間</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-blue tracking-widest mb-1">TOOLS</span>
@@ -160,27 +176,20 @@
                             <div class="space-y-6">
                                 <div>
                                     <!-- Downsized H4 -->
-                                    <h4 class="font-bold text-lg mb-2">Context</h4>
+                                    <h4 class="font-bold text-lg mb-2">ディスカッション</h4>
                                     <!-- Downsized Body P -->
-                                    <p class="text-sm leading-relaxed">The team initially discussed the importance of
-                                        breakfast for university students.</p>
+                                    <p class="text-sm leading-relaxed">チームは当初、大学生にとっての朝食の重要性について議論しました。</p>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-lg mb-2">The "Why" Analysis</h4>
-                                    <p class="text-sm leading-relaxed">Through discussion, the team realized students
-                                        don't eat breakfast because they "can't wake up".</p>
+                                    <h4 class="font-bold text-lg mb-2">問題に対して「なぜ？」</h4>
+                                    <p class="text-sm leading-relaxed">
+                                        朝ごはんを食べない理由として、「朝起きれないから」が多いことに気づく。では、朝起きれないのはなぜか？</p>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-lg mb-2">Root Cause</h4>
-                                    <p class="text-sm leading-relaxed">The accumulation of fatigue from bad sleep is the
-                                        core issue that prevents a healthy morning routine.</p>
+                                    <h4 class="font-bold text-lg mb-2">課題の気づき</h4>
+                                    <p class="text-sm leading-relaxed">
+                                        睡眠の質がいい日は、朝起きた時によく寝れたと実感する。自動的に朝ごはんに繋がり、いい生活にスタートをきれる。</p>
                                 </div>
-                                <!-- <div class="bg-rift-blue/5 p-6 border-l-2 border-rift-blue">
-                                    <h4 class="font-bold text-base mb-2 text-rift-blue">Key Insight</h4>
-                                    <p class="text-sm italic leading-relaxed">"On days with a good quality of sleep,
-                                        people feel better in the morning. This naturally leads to breakfast to have a
-                                        good start to the day."</p>
-                                </div> -->
                             </div>
                             <div class="flex items-center justify-center relative">
                                 <img src="reverie_images/reverieDiscussion.png" alt="Challenge Analysis"
@@ -216,22 +225,19 @@
                     <section class="py-12">
                         <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-blue text-xs tracking-widest mb-4">03 ★ SOLUTION</h2>
-                            <h3 class="font-sans text-2xl md:text-4xl uppercase">The Solution</h3>
                         </div>
 
                         <div class="space-y-24">
                             <!-- Feature 1 -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div>
-                                    <span class="font-mono text-rift-blue text-xs mb-2 block">FEATURE 01</span>
-                                    <h4 class="font-sans text-2xl mb-4">Active Awakening</h4>
-                                    <p class="text-sm leading-relaxed mb-4 font-bold">An alarm that only stops based on
-                                        step count.</p>
+                                    <span class="font-mono text-rift-blue text-xs mb-2 block">アイデア 01</span>
+                                    <h4 class="font-sans text-2xl mb-4">歩いて解除！</h4>
+                                    <p class="text-sm leading-relaxed mb-4 font-bold">歩数に応じて解除されるアラーム。</p>
                                     <ul class="space-y-4 text-sm">
-                                        <li><strong>Goal:</strong> To fully wake the body up, utilizing the phone's
-                                            built-in step counter to force the user to walk.</li>
-                                        <li><strong>UI Detail:</strong> The screen transitions from red to yellow to
-                                            green to visually track progress.</li>
+                                        <li><strong>目的:</strong>
+                                            朝起きるときに体から起こすため、携帯の歩数計を用い、設定した歩数歩かないとアラームが解除されない機能を考えました。</li>
+                                        <li><strong>UI:</strong> 数字の色を、赤→黄→緑と、ユーザーがしっかりと進んでいるということを視覚的にわかるようにしました。</li>
                                     </ul>
                                 </div>
                                 <div
@@ -249,15 +255,15 @@
                                         class="absolute inset-0 w-full h-full object-cover">
                                 </div>
                                 <div class="order-1 md:order-2">
-                                    <span class="font-mono text-rift-blue text-xs mb-2 block">FEATURE 02</span>
-                                    <h4 class="font-sans text-2xl mb-4">Routine Quality (Digital Detox)</h4>
-                                    <p class="text-sm leading-relaxed mb-4 font-bold">Blocking apps 30 minutes before
-                                        and after sleep.</p>
+                                    <span class="font-mono text-rift-blue text-xs mb-2 block">アイデア 02</span>
+                                    <h4 class="font-sans text-2xl mb-4">寝る前後の30分の質を高める</h4>
+                                    <p class="text-sm leading-relaxed mb-4 font-bold">
+                                        アプリを制限するアプリがたくさん存在する中で、どのように差別化をして、独自性を出すかを考えました。</p>
                                     <ul class="space-y-4 text-sm">
-                                        <li><strong>Goal:</strong> Maximize the quality of the bedtime and morning
-                                            routines by removing distractions.</li>
-                                        <li><strong>Flexibility:</strong> Users can choose which apps to block and
-                                            adjust the timer, giving them freedom until the very end.</li>
+                                        <li><strong>目的:</strong>
+                                            睡眠の質に焦点を絞り、就寝前と起床後の30分ルーティンを改善させることにしました。</li>
+                                        <li><strong>UI:</strong>
+                                            ユーザーが制限したいアプリを選択でき、タイマー時間も調整可能で、自由度が高くあることを意識しました。</li>
                                     </ul>
                                 </div>
                             </div>
@@ -265,15 +271,15 @@
                             <!-- Feature 3 -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div>
-                                    <span class="font-mono text-rift-blue text-xs mb-2 block">FEATURE 03</span>
-                                    <h4 class="font-sans text-2xl mb-4">Offloading Anxiety</h4>
-                                    <p class="text-sm leading-relaxed mb-4 font-bold">A "Nighttime To-Do List" that
-                                        carries over to the next day.</p>
+                                    <span class="font-mono text-rift-blue text-xs mb-2 block">アイデア 03</span>
+                                    <h4 class="font-sans text-2xl mb-4">不安感やストレス
+                                        を減らす</h4>
+                                    <p class="text-sm leading-relaxed mb-4 font-bold">次の日の予定を書き出す</p>
                                     <ul class="space-y-4 text-sm">
-                                        <li><strong>Rationale:</strong> Writing a plan reduces bedtime anxiety by
-                                            offloading tasks from working memory.</li>
-                                        <li><strong>Flow:</strong> Users write the list at night → Sleep → It becomes
-                                            their active to-do list the next morning.</li>
+                                        <li><strong>目的:</strong>
+                                            次の日の予定を書き出すことで、頭の中を整理し、就寝時の不安な気持ちなどを減らすことができます。</li>
+                                        <li><strong>UI:</strong>
+                                            情報量を限りなく少なく、シンプルなデザインを目指しました。</li>
                                     </ul>
                                 </div>
                                 <div
@@ -289,30 +295,27 @@
                     <section class="py-12 mb-12">
                         <div class="border-l-4 border-rift-blue pl-6 -ml-6 mb-8">
                             <h2 class="font-mono text-rift-blue text-xs tracking-widest mb-4">04 ★ REFLECTION</h2>
-                            <h3 class="font-sans text-2xl md:text-4xl uppercase">Reflection & Growth</h3>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                             <!-- Left: Key Learnings -->
                             <div>
-                                <h4 class="font-sans text-xl mb-6">Key Learnings</h4>
+                                <h4 class="font-sans text-xl mb-6">学びと成長</h4>
                                 <ul class="space-y-6 text-sm leading-relaxed">
                                     <li>
-                                        <strong class="text-rift-blue block mb-1">Prototyping Skills</strong>
-                                        <span class="text-rift-black/80">Realized that high-fidelity prototypes
-                                            (interactions and animations) are crucial for user experience, not just
-                                            static flows.</span>
+                                        <strong class="text-rift-blue block mb-1">プロトタイプ技術</strong>
+                                        <span
+                                            class="text-rift-black/80">他グループの、Figma上でのインタラクションやアニメーションの洗練さに圧倒されました。私たちのFigmaプロトタイプもインタラクションなどは導入しましたが、明らかに足りてないと強く感じました。プロトタイプは<strong>フローだけでなく、ユーザーがどのように一つ一つの機能を使用するかという点も大事</strong>だということに気づけました。</span>
                                     </li>
                                     <li>
-                                        <strong class="text-rift-blue block mb-1">Visual Design</strong>
-                                        <span class="text-rift-black/80">Recognized that strong branding and visual
-                                            polish significantly influence how judges perceive the solution.</span>
+                                        <strong class="text-rift-blue block mb-1">ビジュアルデザイン</strong>
+                                        <span
+                                            class="text-rift-black/80">プロトタイプのインタラクションだけでなく、アプリをブランディングする上でのビジュアルも、他のグループに劣っていた部分だと感じました。課題発見までの過程や、ソリューション自体では負けてないと感じたものの、それをさらに審査員にプレゼンする上で、プロトタイプ上のビジュアルデザインは結果を大きく左右したと感じています。</span>
                                     </li>
                                     <li>
-                                        <strong class="text-rift-blue block mb-1">Presentation Skills</strong>
-                                        <span class="text-rift-black/80">Learned that a strong solution can be perceived
-                                            poorly if not presented effectively; nervousness impacted the
-                                            delivery.</span>
+                                        <strong class="text-rift-blue block mb-1">プレゼンテーション</strong>
+                                        <span
+                                            class="text-rift-black/80">プレゼンの大切さを軽く見ていました。いくら内容がよく、ソリューションが強くても、プレゼン力次第で悪く見えたり、さらに良く見えたりすることを肌で感じました。実際にたくさんの人を前にし、たくさんの素晴らしいグループの後に立つと、緊張なども相交じり、自信のあったアイデアや練習してた台詞もうまく伝えることができませんでした。<strong>プレゼン力も、デザインをする上では大事なスキル</strong>だと気づけるいい学びの機会になったと思います。</span>
                                     </li>
                                 </ul>
                             </div>

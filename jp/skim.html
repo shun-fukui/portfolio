@@ -63,28 +63,44 @@
                 <div class="flex flex-row justify-between items-start md:block">
                     <a href="index.html" class="block group">
                         <h1 class="font-vietnam font-thin text-4xl md:text-5xl leading-tight tracking-tighter mb-2 hover-trigger"
-                            data-hover-text="BACK"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
+                            data-hover-text="SHUN"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
                     </a>
 
-                    <!-- Mobile Nav (Visible only on mobile, right of logo) -->
-                    <nav class="flex md:hidden flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
-                        <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
-                        <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
-                        <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                        <a href="../skim.html" class="hover:text-rift-blue hover-trigger">EN</a>
-                    </nav>
+                    <div class="flex flex-col items-end md:hidden">
+                        <nav class="flex flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
+                            <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
+                            <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
+                            <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
+                        </nav>
+                        <!-- Mobile Language Toggle -->
+                        <div class="font-vietnam text-sm mt-4">
+                            <a href="../index.html" class="text-rift-black hover:text-rift-blue hover-trigger">EN</a>
+                            <span class="text-rift-black font-normal">/</span> <span
+                                class="font-bold text-rift-blue cursor-default">JP</span>
+                        </div>
+                    </div>
                 </div>
+
                 <p class="font-mono text-rift-blue text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
+
+                <!-- Desktop Nav -->
                 <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="hover:text-rift-blue hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-blue hover-trigger">ABOUT</a>
                     <a href="contact.html" class="hover:text-rift-blue hover-trigger">CONTACT</a>
-                    <a href="../skim.html" class="hover:text-rift-blue hover-trigger">EN</a>
                 </nav>
             </div>
 
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
-                <p>BASED IN JAPAN & AUSTRALIA</p>
+                <!-- Desktop Language Toggle -->
+                <div class="font-vietnam text-xl mb-6">
+                    <a href="../index.html"
+                        class="text-rift-black hover:text-rift-blue hover-trigger transition-colors">EN</a> <span
+                        class="text-rift-black font-normal">/</span> <span
+                        class="font-bold text-rift-blue cursor-default">JP</span>
+                </div>
+
+                <p>BASED IN JAPAN</p>
                 <p>2026</p>
                 <div class="pt-4 flex gap-4 text-xl items-center">
                     <a href="https://www.instagram.com/sfujix/"
@@ -203,7 +219,7 @@
                                 <h4 class="text-rift-blue font-bold text-2xl mb-2">表現</h4>
                                 <p class="text-base text-sm leading-relaxed">現在の<strong
                                         class="text-rift-blue px-1">16:9</strong>と過去の<strong
-                                        class="text-rift-blue px-1">4:3</strong>の比率を変更して、思い出を振り返ってることを視覚的に比較する。</p>
+                                        class="text-rift-blue px-1">4:3</strong>の比率を変更して、思い出を振り返ってることを視覚的に比較しました。</p>
                             </div>
 
                             <!-- 4. Full Width Image -->
@@ -262,10 +278,10 @@
                             <!-- Item 01: Vinyl -->
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                 <div>
-                                    <span class="font-mono text-rift-blue text-[10px] mb-2 block">ITEM 01</span>
-                                    <h4 class="text-rift-blue font-sans text-xl mb-4">Exclusive Vinyl Records</h4>
-                                    <p class="text-sm leading-relaxed">While costly to produce, making them
-                                        exclusive to live events adds a sense of exclusivity to attract fans.</p>
+                                    <span class="font-mono text-rift-blue text-[10px] mb-2 block">グッズ 01</span>
+                                    <h4 class="text-rift-blue font-sans text-xl mb-4">限定アナログレコード</h4>
+                                    <p class="text-sm leading-relaxed">
+                                        制作コストは高くなりますが、ライブ会場限定で販売することで「特別感」を演出し、ファンの購買意欲を高める戦略を採用しました。</p>
                                 </div>
                                 <div class="w-full bg-rift-grey relative">
                                     <img src="../skim_images/vinylFront.jpg" class="w-full h-full object-cover">
@@ -278,15 +294,12 @@
                                     <img src="../skim_images/guitarpickjpg.jpg" class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <span class="font-mono text-rift-blue text-[10px] mb-2 block">ITEM 02</span>
-                                    <h4 class="text-rift-blue font-sans text-xl mb-4">Guitar Picks</h4>
-                                    <p class="text-sm leading-relaxed mb-4">Small, inexpensive, and essential
-                                        for the artist.</p>
-                                    <p class="text-sm text-rift-black"><Strong>Interaction:</Strong> Artists can throw
-                                        them
-                                        into
-                                        the crowd as a token of appreciation, leveraging the intimacy of amateur
-                                        performances.</p>
+                                    <span class="font-mono text-rift-blue text-[10px] mb-2 block">グッズ 02</span>
+                                    <h4 class="text-rift-blue font-sans text-xl mb-4">ギターピック</h4>
+                                    <p class="text-sm leading-relaxed mb-4">安価でコンパクト、かつアーティストにとって不可欠なアイテム。</p>
+                                    <p class="text-sm text-rift-black">
+                                        演奏後に客席へ投げ入れるといったインタラクションを通じて、小規模なライブならではの「アーティストとの親密さ」を演出する感謝のしるしとして機能します。
+                                    </p>
                                 </div>
 
                             </div>

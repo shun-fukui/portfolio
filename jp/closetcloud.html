@@ -61,20 +61,43 @@
         <aside
             class="md:w-1/6 md:h-screen md:fixed md:top-0 md:left-0 p-8 flex flex-col justify-between border-r border-rift-black bg-rift-white z-20">
             <div>
-                <a href="index.html" class="block group">
-                    <h1 class="font-vietnam font-thin text-3xl md:text-4xl leading-tight tracking-tighter mb-2 hover-trigger"
-                        data-hover-text="SHUN"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
-                </a>
+                <div class="flex flex-row justify-between items-start md:block">
+                    <a href="index.html" class="block group">
+                        <h1 class="font-vietnam font-thin text-3xl md:text-4xl leading-tight tracking-tighter mb-2 hover-trigger"
+                            data-hover-text="SHUN"><span class="letter-spacing:-0.02em">SHUN</span><br>FUKUI</h1>
+                    </a>
+
+                    <div class="flex flex-col items-end md:hidden">
+                        <nav class="flex flex-col items-end gap-1 text-xs font-vietnam font-bold pt-2">
+                            <a href="archive.html" class="hover:text-rift-red hover-trigger">ARCHIVE</a>
+                            <a href="about.html" class="hover:text-rift-red hover-trigger">ABOUT</a>
+                            <a href="contact.html" class="hover:text-rift-red hover-trigger">CONTACT</a>
+                        </nav>
+                        <!-- Mobile Language Toggle -->
+                        <div class="font-vietnam text-sm mt-4">
+                            <a href="../index.html" class="text-rift-black hover:text-rift-red hover-trigger">EN</a>
+                            <span class="text-rift-black font-normal">/</span> <span
+                                class="font-bold text-rift-red cursor-default">JP</span>
+                        </div>
+                    </div>
+                </div>
                 <p class="font-mono text-rift-red text-xs tracking-widest mb-8">CREATIVE ★ DESIGNER</p>
                 <nav class="hidden md:flex flex-col gap-2 text-lg font-vietnam font-bold">
                     <a href="archive.html" class="hover:text-rift-red hover-trigger">ARCHIVE</a>
                     <a href="about.html" class="hover:text-rift-red hover-trigger">ABOUT</a>
                     <a href="contact.html" class="hover:text-rift-red hover-trigger">CONTACT</a>
-                    <a href="../closetcloud.html" class="hover:text-rift-red hover-trigger">EN</a>
                 </nav>
             </div>
 
             <div class="hidden md:block font-mono text-xs text-rift-black space-y-2">
+                <!-- Desktop Language Toggle -->
+                <div class="font-vietnam text-xl mb-6">
+                    <a href="../index.html"
+                        class="text-rift-black hover:text-rift-red hover-trigger transition-colors">EN</a> <span
+                        class="text-rift-black font-normal">/</span> <span
+                        class="font-bold text-rift-red cursor-default">JP</span>
+                </div>
+
                 <p>BASED IN JAPAN & AUSTRALIA</p>
                 <p>2026</p>
                 <div class="pt-4 flex gap-4 text-xl items-center">
@@ -116,8 +139,7 @@
                         <p class="font-mono text-rift-red text-base tracking-widest">借りて, 着て, 返す！</p>
                         <!-- Downsized Intro -->
                         <p class="text-lg md:text-xl leading-relaxed max-w-3xl mt-8">
-                            ClosetCloud aims to promote clothing sustainability by offering people the option to rent
-                            clothes for a much cheaper price.
+                            ClosetCloudは、より手頃な価格で衣類をレンタルできる選択肢を提供し、ファッションのサステナビリティを推進することを目指しています。
                         </p>
                     </div>
 
@@ -125,19 +147,19 @@
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-rift-black py-8">
                         <div>
                             <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">TYPE</span>
-                            <span class="font-bold text-sm">UX Project</span>
+                            <span class="font-bold text-sm">UXプロジェクト</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">ROLE</span>
-                            <span class="font-bold text-sm">UX Designer</span>
+                            <span class="font-bold text-sm">UXデザイナー</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">TEAM</span>
-                            <span class="font-bold text-sm">4 People</span>
+                            <span class="font-bold text-sm">4人</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">DURATION</span>
-                            <span class="font-bold text-sm">Aug 2025 - Nov 2025</span>
+                            <span class="font-bold text-sm">08/2025 - 11/2025</span>
                         </div>
                         <div>
                             <span class="block font-mono text-[10px] text-rift-red tracking-widest mb-1">TOOLS</span>
@@ -156,36 +178,33 @@
 
                         <div class="space-y-20">
                             <div>
-                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Problem</h4>
-                                <p class="text-sm leading-relaxed mb-4">ClosetCloud addresses the problem of
-                                    overconsumption in the fashion industry, as it causes significant harm to the
-                                    environment.</p>
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">問題</h4>
+                                <p class="text-sm leading-relaxed mb-4">
+                                    ClosetCloudは、環境に甚大な負荷を与えているファッション業界の「過剰消費」という課題に着目しました。</p>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                                     <!-- Waste Card -->
                                     <div class="space-y-3">
                                         <div
-                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center overflow-hidden">
+                                            class="aspect-video bg-rift-grey flex items-center justify-center overflow-hidden">
                                             <img src="../closetcloud_images/waste_image.jpg" alt="Textile Waste"
                                                 class="w-full h-full object-cover">
                                         </div>
-                                        <span class="block font-bold text-xl">Waste</span>
-                                        <p class="text-sm leading-relaxed">92 million tonnes of textile waste is
-                                            generated per year worldwide with around 85% of textiles ending up in
-                                            landfills or are burnt.</p>
+                                        <span class="block font-bold text-xl">繊維廃棄物の現状</span>
+                                        <p class="text-sm leading-relaxed">
+                                            世界では年間9,200万トンの繊維廃棄物が発生しており、その約85%が埋め立て処分、あるいは焼却されています。</p>
                                     </div>
 
                                     <!-- Fast Fashion Card -->
                                     <div class="space-y-3">
                                         <div
-                                            class="aspect-video bg-rift-grey border border-rift-black flex items-center justify-center overflow-hidden">
+                                            class="aspect-video bg-rift-grey flex items-center justify-center overflow-hidden">
                                             <img src="../closetcloud_images/fast_fashion.jpg" alt="Fast Fashion Culture"
                                                 class="w-full h-full object-cover">
                                         </div>
-                                        <span class="block font-bold text-xl">Fast Fashion Culture</span>
-                                        <p class="text-sm leading-relaxed">Trendy clothes and styles are produced
-                                            quickly in a large volume and sold at a cheap price. This encourages
-                                            consumers to purchase frequently and dispose.</p>
+                                        <span class="block font-bold text-xl">ファストファッション文化</span>
+                                        <p class="text-sm leading-relaxed">
+                                            最新のトレンドを取り入れた衣服を低価格で大量生産・販売するビジネスモデル。これが消費者の「頻繁な購入と使い捨て」を助長する要因となっています。</p>
                                     </div>
                                 </div>
                             </div>
@@ -194,13 +213,11 @@
                                 <div
                                     class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-32 mb-32 px-8 md:px-16">
                                     <div class="space-y-4">
-                                        <h4 class="font-bold text-2xl font-sans leading-tight text-rift-red">Our
-                                            Solution
+                                        <h4 class="font-bold text-2xl font-sans leading-tight text-rift-red">ソリューション
                                         </h4>
-                                        <p class="text-sm leading-relaxed">A peer-to-peer clothing rental platform that
-                                            connects
-                                            people who want to rent, lend, or share affordable outfits directly from one
-                                            another’s closets.</p>
+                                        <p class="text-sm leading-relaxed">
+                                            個人のクローゼットを直接つなぐ、個人間（C2C）の衣服レンタル・シェアリングプラットフォーム。リーズナブルな価格で、誰でも気軽にファッションをシェアできます。
+                                        </p>
                                     </div>
                                     <div class="w-full mx-auto md:mx-0">
                                         <img src="../closetcloud_images/closetCloud(2).png" alt="ClosetCloud Solution"
@@ -220,17 +237,16 @@
                         <div class="space-y-12">
                             <!-- Subheading: Identifying Stakeholders -->
                             <div>
-                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Identifying
-                                    Stakeholders</h4>
+                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">ステークホルダー分析
+                                </h4>
                                 <p class="text-sm leading-relaxed mb-6">
-                                    The diagram outlines the stakeholders involved in this problem domain, grouped into
-                                    two main categories: users and providers of clothing items.
+                                    本プロジェクトに関わる関係者を、衣服の「利用者」と「提供者」の視点から分類・整理しました。
                                 </p>
                                 <img src="../closetcloud_images/Stakeholders.png" alt="Stakeholder Map"
                                     class="w-full h-auto mb-4 border border-rift-black">
-                                <p class="text-sm leading-relaxed mb-6">We found 3 major themes that resulted from
-                                    opposing goals and priorities within stakeholders, we decided to tackle these themes
-                                    through our solution.</p>
+                                <p class="text-sm leading-relaxed mb-6">
+                                    分析の結果、各ステークホルダー間のニーズの相違から生じる3つの大きな課題（テーマ）が浮き彫りになりました。私たちは、この対立するニーズを解消することにフォーカスし、プロダクトの設計を行いました。
+                                </p>
                                 <div class="w-full text-center">
                                     <img src="../closetcloud_images/findings1.png" alt="Key Findings"
                                         class="mx-auto w-3/4">
@@ -238,14 +254,14 @@
                             </div>
 
                             <!-- Subheading: Early Interviews & Findings -->
-                            <div>
+                            <!-- <div>
                                 <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Early
                                     Interviews & Findings</h4>
                                 <p class="text-sm leading-relaxed">
                                     Based on our stakeholder diagram, we interviewed some stakeholders to gain insights
                                     as part of our ideation process.
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </section>
 
@@ -258,7 +274,8 @@
                         <div class="space-y-12">
                             <div class="mt-18">
                                 <!-- Downsized feature header -->
-                                <h4 class="font-bold mb-8 text-2xl font-sans leading-tight text-rift-red">Features</h4>
+                                <h4 class="font-bold mb-8 text-2xl font-sans leading-tight text-rift-red">ClosetCloudの機能
+                                </h4>
                                 <!-- 2x2 Grid -->
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -266,11 +283,9 @@
                                     <div class="space-y-3">
                                         <img src="../closetcloud_images/conditionReport.png" alt="Condition Report"
                                             class="w-full h-auto">
-                                        <span class="block font-bold text-xl">Condition Report</span>
-                                        <p class="text-sm leading-relaxed">Lenders must complete a condition report
-                                            when
-                                            lending out an item of clothing, describing the item’s quality. Upon
-                                            receiving the item, the renter cross-checks with the condition report.
+                                        <span class="block font-bold text-xl">コンディション・レポート</span>
+                                        <p class="text-sm leading-relaxed">
+                                            貸し手はアイテムの貸出時に、品質や状態を記載したレポートを作成します。借り手はアイテムを受け取り次第、そのレポートと照らし合わせて実物を確認する仕組みです。
                                         </p>
                                     </div>
 
@@ -278,31 +293,28 @@
                                     <div class="space-y-3">
                                         <img src="../closetcloud_images/sizingCompatibility.png"
                                             alt="Sizing Compatibility" class="w-full h-auto">
-                                        <span class="block font-bold text-xl">Sizing Compatibility</span>
-                                        <p class="text-sm leading-relaxed">Users can save their body measurements on
-                                            their profile, allowing them to use the sizing compatibility feature on
-                                            different products.</p>
+                                        <span class="block font-bold text-xl">サイズ互換性チェック</span>
+                                        <p class="text-sm leading-relaxed">
+                                            ユーザーは自分のマイサイズ（採寸データ）をプロフィールに登録しておくことで、各アイテムとのサイズ互換性を自動で確認できる機能を利用できます。</p>
                                     </div>
 
                                     <!-- Feature 3 -->
                                     <div class="space-y-3">
                                         <img src="../closetcloud_images/qrCode.png" alt="QR Code" class="w-full h-auto">
-                                        <span class="block font-bold text-xl">QR Code</span>
-                                        <p class="text-sm leading-relaxed">Renters receive a unique QR code which
-                                            can be
-                                            scanned by the lender when receiving the item. This ensures smooth
-                                            verification of identity.</p>
+                                        <span class="block font-bold text-xl">QRコードによる本人確認</span>
+                                        <p class="text-sm leading-relaxed">
+                                            アイテムの受け取りは、QRコードを提示するだけ。貸し手側でスキャンするだけで本人照合が完了するため、対面でのやり取りもストレスなく、安全に行えます。.
+                                        </p>
                                     </div>
 
                                     <!-- Feature 4 -->
                                     <div class="space-y-3">
                                         <img src="../closetcloud_images/bargainToBuy.png" alt="Bargain to buy"
                                             class="w-full h-auto">
-                                        <span class="block font-bold text-xl">Bargain to buy</span>
-                                        <p class="text-sm leading-relaxed">Users have the option to bargain to buy a
-                                            clothing item. This allows users to save money from repeatedly renting
-                                            and
-                                            further strengthen sustainability.</p>
+                                        <span class="block font-bold text-xl">気に入ったら交渉！</span>
+                                        <p class="text-sm leading-relaxed">
+                                            「何度も借りたい」と思ったアイテムは、貸し手と交渉して購入することが可能です。出費を賢く抑えながら、お気に入りの一着を長く愛用する。そんな新しい所有の形を提案します。
+                                        </p>
                                     </div>
 
                                 </div>
@@ -318,20 +330,13 @@
 
                         <div class="space-y-8">
                             <div>
-                                <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">Task
-                                    Scenarios
-                                </h4>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                                     <div>
-                                        <p class="text-sm leading-relaxed">We conducted a usability test on 8
-                                            participants
-                                            using
-                                            4 different task scenarios, one for each of our main features. We gathered
-                                            qualitative data through open-ended questions and quantitative data through
-                                            a
-                                            system
-                                            usability scale with options ranging from strongly agree to strongly
-                                            disagree.
+                                        <h4 class="font-bold mb-4 text-2xl font-sans leading-tight text-rift-red">
+                                            ユーザーテスト
+                                        </h4>
+                                        <p class="text-sm leading-relaxed">
+                                            8名の参加者を対象に、4つの主要機能に基づいたタスクシナリオを用いてユーザビリティテストを実施しました。自由回答形式の質問から「定性的データ」を収集し、同時に「システムユーザビリティ尺度（SUS）」を用いた5段階評価（強く同意する〜全く同意しない）によって「定量的データ」を測定しました。
                                         </p>
                                     </div>
                                     <div>
@@ -344,17 +349,13 @@
                             <div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-24">
                                     <div>
-                                        <h4 class="font-bold mb-6 text-2xl font-sans leading-tight text-rift-red">First
-                                            Click
-                                            Test</h4>
+                                        <h4 class="font-bold mb-6 text-2xl font-sans leading-tight text-rift-red">
+                                            ファーストクリックテスト</h4>
                                         <div class="space-y-3">
-                                            <span class="block font-bold text-xl">Highlighted Navigational
-                                                Ambiguity</span>
-                                            <p class="text-sm leading-relaxed">Despite the task being the same, the
-                                                clicks
-                                                were spread out. Participants displayed confusion due to information
-                                                overload,
-                                                which increased cognitive load and decision paralysis.</p>
+                                            <span class="block font-bold text-xl">ナビゲーションの曖昧さが浮き彫りに</span>
+                                            <p class="text-sm leading-relaxed">
+                                                同一のタスクを提示したにもかかわらず、クリック箇所が分散する結果となりました。情報過多による混乱がユーザーの認知負荷を高め、「決定回避（ディシジョン・パラリシス）」を引き起こしていることがわかりました。
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="items-center">
@@ -418,10 +419,9 @@
                                 class="w-full shadow-2xl">
                         </div>
                         <!-- Right: Quote -->
-                        <div class="order-1 md:order-2 text-center">
+                        <div class="order-1 md:order-2 text-left">
                             <h3 class="font-montreal text-base md:text-lg leading-tight">
-                                “We hope ClosetCloud can create a safer, more enjoyable, <br>and encourage more
-                                sustainable habits in the clothing world.”
+                                「ファッションをもっと自由に、もっと心地よく。ClosetCloudは、地球に優しい新しいライフスタイルを提案します。」
                             </h3>
                         </div>
                     </section>
@@ -431,7 +431,7 @@
             <!-- Footer -->
             <footer class="bg-rift-white text-rift-black py-20 px-4 text-center border-t border-rift-black mt-auto">
                 <div class="max-w-4xl mx-auto space-y-8">
-                    <h2 class="font-mono text-sm tracking-widest text-rift-red">NEXT PROJECT?</h2>
+                    <h2 class="font-mono text-sm tracking-widest text-rift-red">もっと見る</h2>
                     <a href="index.html"
                         class="font-vietnam text-4xl md:text-6xl hover:text-rift-red transition-colors hover-trigger">VIEW
                         ALL WORK</a>
